@@ -47,6 +47,8 @@ def atp_players():
 
     print players.keys()
     print players['rafaelnadal'].keys()
+    with open('players.txt', 'w') as outfile:
+	json.dump(players, outfile)
     return json.dumps(players)
 
 
@@ -105,6 +107,10 @@ def atp_tournaments():
     all_tournament_urls = dict(result)
     tournaments = get_all_tournament_stats(all_tournament_urls)
     print tournaments.keys()
+    
+    with open('tournaments.txt', 'w') as outfile:
+	json.dump(tournaments, outfile)
+  
     return json.dumps(tournaments)
 
 
