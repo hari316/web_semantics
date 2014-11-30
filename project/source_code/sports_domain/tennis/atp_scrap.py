@@ -17,38 +17,40 @@ def atp_players():
     soup = bs4.BeautifulSoup(response.text)
     results = [(profile.get_text().encode('utf-8').replace('\xc2\xa0', ' '), profile.attrs.get('href'))
                for profile in soup.select('td.first a[href^=/Tennis]')]
-    players = OrderedDict()
+    players = []
     name = dict()
 
-    # result = results[2]
-    #
-    # val = result[0].split(',')
-    # url = result[1]
-    # player_dict = {}
-    # name['firstname'] = val[1].strip()
-    # name['lastname'] = val[0].strip()
-    # player_id = val[1].strip().lower()+val[0].strip().lower()
-    # player_dict['fullname'] = name
-    # player_dict['url'] = url
-    # player_dict['bio_data'] = get_player_details(url)
-    # players[player_id] = player_dict
-
+    # Testing code funtionality
+    """
+    result = results[2]
+    
+    val = result[0].split(',')
+    url = result[1]
+    player_dict = {} 
+    name['firstname'] = val[1].strip()
+    name['lastname'] = val[0].strip()
+    player_id = val[1].strip().lower()+val[0].strip().lower()
+    player_dict['fullname'] = dict(name)
+    player_dict['url'] = url
+    player_dict['bio_data'] = get_player_details(url)
+    players[player_id] = player_dict 
+    players.append(player_dict)
+    print players[0]
+    """    
     for result in results:
         val = result[0].split(',')
         url = result[1]
-        player_dict = {}
+        player_records = {}
         name['firstname'] = val[1].strip()
         name['lastname'] = val[0].strip()
         player_id = val[1].strip().lower()+val[0].strip().lower()
-        player_dict['fullname'] = name
-        player_dict['url'] = url
-        player_dict['bio_data'] = get_player_details(url)
-        players[player_id] = player_dict
-
-    print players.keys()
-    print players['rafaelnadal'].keys()
-    with open('players.txt', 'w') as outfile:
-	json.dump(players, outfile)
+        player_records['fullname'] = dict(name)
+        player_records['url'] = url
+        player_records['bio_data'] = get_player_details(url)
+    	players.append(player_records)
+    
+    with open('players.json', 'w') as outfile:
+        json.dump(players, outfile)
     return json.dumps(players)
 
 
@@ -106,29 +108,37 @@ def atp_tournaments():
               for profile in soup.select('a[href^=/Tennis]')]
     all_tournament_urls = dict(result)
     tournaments = get_all_tournament_stats(all_tournament_urls)
-    print tournaments.keys()
-    
-    with open('tournaments.txt', 'w') as outfile:
-	json.dump(tournaments, outfile)
+     
+    with open('australian_open.json', 'w') as outfile:
+	json.dump(tournaments[0], outfile)
   
-    return json.dumps(tournaments)
+    with open('wimbledon_open.json', 'w') as outfile:
+	json.dump(tournaments[1], outfile)
+    
+    with open('french_open.json', 'w') as outfile:
+	json.dump(tournaments[2], outfile)
 
+    with open('us_open.json', 'w') as outfile:
+	json.dump(tournaments[3], outfile)
+    
+    return json.dumps(tournaments)
+    
 
 def get_all_tournament_stats(urls_dict):
 
     grandslams = ['Australian Open', 'Wimbledon', 'Roland Garros', 'US Open']
-    slam_dict = dict()
+    slam_record = list()
     for event in grandslams:
         if event in urls_dict:
-            slam_dict[event] = get_tournament_details(root_url+urls_dict[event])
-    return slam_dict
+            slam_record.append(get_tournament_details(event, root_url+urls_dict[event]))
+    return slam_record
 
 
-def get_tournament_details(url):
+def get_tournament_details(slam_name, url):
     """ This Method retrieves details of all the grand slam final matches from ATP tours site.
     """
     #print url
-    slam_details = dict()
+    slam_details = list()
     response = requests.get(url)
     soup = bs4.BeautifulSoup(response.text)
     for index in range(1,16):
@@ -138,9 +148,11 @@ def get_tournament_details(url):
         year = cols[0].get_text()
         score_url = cols[1].select('a')[0].attrs.get('href')
         match_detail = dict()
+        match_detail['tournament'] = slam_name
         match_detail['score'] = get_match_details(root_url+score_url)
         match_detail['winner'] = cols[2].get_text().encode('utf-8').replace('\xc2\xa0', ' ')
-        slam_details[year.encode('utf-8')] = match_detail
+        match_detail['year'] = year.encode('utf-8')
+        slam_details.append(match_detail)
     #print slam_details['2014']['winner']
     #print slam_details.values()
     return slam_details
