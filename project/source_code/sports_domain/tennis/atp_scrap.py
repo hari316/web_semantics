@@ -44,9 +44,9 @@ def atp_players():
         name['firstname'] = val[1].strip()
         name['lastname'] = val[0].strip()
         player_id = val[1].strip().lower()+val[0].strip().lower()
-        player_records['fullname'] = dict(name)
+        player_records['name'] = name['firstname'] + ' ' + name['lastname']
         player_records['url'] = url
-        player_records['bio_data'] = get_player_details(url)
+        player_records.update(get_player_details(url))
     	players.append(player_records)
     
     with open('players.json', 'w') as outfile:
