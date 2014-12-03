@@ -1,0 +1,2481 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19493psm4x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "PaintingRecordsJSON.json-WSP1WS1.json" ;
+	km-dev:modelPublicationTime "1413350224580"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"ArtistDataURL\"}],[{\"columnName\":\"BirthDate\"}],[{\"columnName\":\"PrimaryAccession#\"}],[{\"columnName\":\"DimensionsUnit\"}],[{\"columnName\":\"MediumAndSupport\"}],[{\"columnName\":\"DeathDate\"}],[{\"columnName\":\"DimensionsCentimeterHeight\"}],[{\"columnName\":\"BirthPlace\"}],[{\"columnName\":\"Year\"}],[{\"columnName\":\"DimensionsCentimeterWidth\"}],[{\"columnName\":\"DimensionInches\"}],[{\"columnName\":\"DimensionsCentimeterLength\"}],[{\"columnName\":\"DeathPlace\"}],[{\"columnName\":\"CreditLine\"}],[{\"columnName\":\"ImageURL\"}],[{\"columnName\":\"PaintingTitle\"}],[{\"columnName\":\"ArtistName\"}],[{\"columnName\":\"PaintingURL\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"ArtistDataURL\"}],[{\"columnName\":\"BirthDate\"}],[{\"columnName\":\"PrimaryAccession#\"}],[{\"columnName\":\"DimensionsUnit\"}],[{\"columnName\":\"MediumAndSupport\"}],[{\"columnName\":\"DeathDate\"}],[{\"columnName\":\"DimensionsCentimeterHeight\"}],[{\"columnName\":\"BirthPlace\"}],[{\"columnName\":\"Year\"}],[{\"columnName\":\"DimensionsCentimeterWidth\"}],[{\"columnName\":\"DimensionInches\"}],[{\"columnName\":\"DimensionsCentimeterLength\"}],[{\"columnName\":\"DeathPlace\"}],[{\"columnName\":\"CreditLine\"}],[{\"columnName\":\"ImageURL\"}],[{\"columnName\":\"PaintingTitle\"}],[{\"columnName\":\"ArtistName\"}],[{\"columnName\":\"PaintingURL\"}]]" ;
+	km-dev:hasModelLabel "PaintingRecordsJSON.json-WSP1WS1.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ArtistName\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"schema:Person1 (add)\",
+                    \"DomainId\": \"http://schema.org/Person1 (add)\",
+                    \"DomainUri\": \"http://schema.org/Person\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ArtistName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ArtistName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/Person1\",
+                    \"edgeId\": \"http://schema.org/author\",
+                    \"edgeTargetId\": \"http://schema.org/Person1\",
+                    \"edgeSourceId\": \"http://schema.org/Painting1 (add)\",
+                    \"edgeSourceUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ImageURL\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/thumbnailUrl\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ImageURL\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ImageURL\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PaintingTitle\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/headline\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PaintingTitle\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PaintingTitle\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PrimaryAccession#\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/position\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PrimaryAccession#\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PrimaryAccession#\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"MediumAndSupport\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/genre\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"MediumAndSupport\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"MediumAndSupport\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Year\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/copyrightYear\",
+                    \"DomainLabel\": \"schema:Number1 (add)\",
+                    \"DomainId\": \"http://schema.org/Number1 (add)\",
+                    \"DomainUri\": \"http://schema.org/Number\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Year\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/value\",
+                    \"DomainLabel\": \"schema:Number1\",
+                    \"DomainId\": \"http://schema.org/Number1\",
+                    \"DomainUri\": \"http://schema.org/Number\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Year\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/copyrightYear\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"CreditLine\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://purl.org/dc/terms/contributor\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CreditLine\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CreditLine\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterLength\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/height\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterLength\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterLength\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsUnit\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/unitCode\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsUnit\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsUnit\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterWidth\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/width\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterWidth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterWidth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionInches\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/unitCode\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionInches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionInches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DeathDate\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/deathDate\",
+                    \"DomainLabel\": \"schema:Person1\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"DomainUri\": \"http://schema.org/Person\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DeathDate\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DeathDate\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"BirthDate\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/birthDate\",
+                    \"DomainLabel\": \"schema:Person1\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"DomainUri\": \"http://schema.org/Person\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BirthDate\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BirthDate\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PaintingURL\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/sameAs\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PaintingURL\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PaintingURL\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ArtistDataURL\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/sameAs\",
+                    \"DomainLabel\": \"schema:Person1\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"DomainUri\": \"http://schema.org/Person\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ArtistDataURL\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ArtistDataURL\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PrimaryAccession#\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/position\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PrimaryAccession#\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PrimaryAccession#\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Year\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/copyrightYear\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:integer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterLength\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/height\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterLength\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterLength\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterWidth\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/width\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:integer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterWidth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterWidth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterWidth\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/width\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterWidth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterWidth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterHeight\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnassignSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionInches\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/unitCode\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:integer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionInches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionInches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionInches\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/unitCode\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:integer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionInches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionInches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionInches\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/unitCode\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionInches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionInches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DeathPlace\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [
+                    {
+                        \"isPrimary\": true,
+                        \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                        \"DomainLabel\": \"schema:Person1\",
+                        \"DomainId\": \"http://schema.org/Person1\",
+                        \"DomainUri\": \"http://schema.org/Person\"
+                    },
+                    {
+                        \"isPrimary\": false,
+                        \"FullType\": \"http://schema.org/addressRegion\",
+                        \"DomainLabel\": \"schema:Person1\",
+                        \"DomainId\": \"http://schema.org/Person1\",
+                        \"DomainUri\": \"http://schema.org/Person\"
+                    }
+                ],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DeathPlace\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DeathPlace\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"BirthPlace\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/addressRegion\",
+                    \"DomainLabel\": \"schema:Person1\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"DomainUri\": \"http://schema.org/Person\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BirthPlace\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BirthPlace\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterHeight\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/height\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterHeight\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/height\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterHeight\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"DimensionsCentimeterHeight\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return 0\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterHeight\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/sameAs\",
+                    \"DomainLabel\": \"schema:Painting1\",
+                    \"DomainId\": \"http://schema.org/Painting1\",
+                    \"DomainUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DimensionsCentimeterLength\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/height\",
+                    \"DomainLabel\": \"owl:Thing1 (add)\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1 (add)\",
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterLength\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DimensionsCentimeterLength\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/sameAs\",
+                    \"edgeTargetId\": \"HN27\",
+                    \"edgeSourceId\": \"http://schema.org/Painting1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP5:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"HN27\",
+                    \"edgeId\": \"http://schema.org/sameAs\",
+                    \"edgeTargetId\": \"HN27\",
+                    \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeSourceUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/mentions\",
+                    \"edgeTargetId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeSourceId\": \"http://schema.org/Painting1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP5:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"edgeId\": \"http://schema.org/height\",
+                    \"edgeTargetId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeSourceId\": \"http://schema.org/Painting1\",
+                    \"edgeSourceUri\": \"http://schema.org/Painting\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 a rr:TriplesMap .
+
+_:node19493psm4x1 km-dev:hasTriplesMap km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x2 rr:tableName "PaintingRecordsJSON.json-WSP1WS1.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasLogicalTable _:node19493psm4x2 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:logicalTable _:node19493psm4x2 ;
+	rr:subjectMap _:node19493psm4x3 .
+
+_:node19493psm4x1 km-dev:hasSubjectMap _:node19493psm4x3 .
+
+_:node19493psm4x3 km-dev:isPartOfMapping _:node19493psm4x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Painting1" ;
+	rr:class schema:Painting ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:Painting1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_cbed0309-d837-4731-80f7-62fb8e1317fa rr:predicate dcterms:contributor .
+
+_:node19493psm4x4 rr:column "CreditLine" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x4 .
+
+km-dev:PredicateObjectMap_cbed0309-d837-4731-80f7-62fb8e1317fa rr:objectMap _:node19493psm4x4 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_cbed0309-d837-4731-80f7-62fb8e1317fa .
+
+km-dev:PredicateObjectMap_cbed0309-d837-4731-80f7-62fb8e1317fa a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cbed0309-d837-4731-80f7-62fb8e1317fa .
+
+km-dev:PredicateObjectMap_5d3bcd15-7aee-4c2b-8583-f73b6cee2e9f rr:predicate schema:author .
+
+km-dev:RefObjectMap_ad04cc2a-8364-4ae3-9df9-48f4ce76e6d0 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap km-dev:RefObjectMap_ad04cc2a-8364-4ae3-9df9-48f4ce76e6d0 .
+
+km-dev:PredicateObjectMap_5d3bcd15-7aee-4c2b-8583-f73b6cee2e9f rr:objectMap km-dev:RefObjectMap_ad04cc2a-8364-4ae3-9df9-48f4ce76e6d0 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_5d3bcd15-7aee-4c2b-8583-f73b6cee2e9f .
+
+km-dev:PredicateObjectMap_5d3bcd15-7aee-4c2b-8583-f73b6cee2e9f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5d3bcd15-7aee-4c2b-8583-f73b6cee2e9f .
+
+km-dev:PredicateObjectMap_90900ecb-0538-4b56-9e1f-61125ce75d7f rr:predicate schema:copyrightYear .
+
+_:node19493psm4x5 rr:column "Year" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x5 .
+
+km-dev:PredicateObjectMap_90900ecb-0538-4b56-9e1f-61125ce75d7f rr:objectMap _:node19493psm4x5 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_90900ecb-0538-4b56-9e1f-61125ce75d7f .
+
+km-dev:PredicateObjectMap_90900ecb-0538-4b56-9e1f-61125ce75d7f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_90900ecb-0538-4b56-9e1f-61125ce75d7f .
+
+km-dev:PredicateObjectMap_c473f8da-1870-4924-990e-04523ec45f7d rr:predicate schema:genre .
+
+_:node19493psm4x6 rr:column "MediumAndSupport" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x6 .
+
+km-dev:PredicateObjectMap_c473f8da-1870-4924-990e-04523ec45f7d rr:objectMap _:node19493psm4x6 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_c473f8da-1870-4924-990e-04523ec45f7d .
+
+km-dev:PredicateObjectMap_c473f8da-1870-4924-990e-04523ec45f7d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c473f8da-1870-4924-990e-04523ec45f7d .
+
+km-dev:PredicateObjectMap_1c6685fb-34ae-4508-9cc0-228f8b5c8c51 rr:predicate schema:headline .
+
+_:node19493psm4x7 rr:column "PaintingTitle" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x7 .
+
+km-dev:PredicateObjectMap_1c6685fb-34ae-4508-9cc0-228f8b5c8c51 rr:objectMap _:node19493psm4x7 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_1c6685fb-34ae-4508-9cc0-228f8b5c8c51 .
+
+km-dev:PredicateObjectMap_1c6685fb-34ae-4508-9cc0-228f8b5c8c51 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1c6685fb-34ae-4508-9cc0-228f8b5c8c51 .
+
+km-dev:PredicateObjectMap_54736f35-d0d4-41ba-8166-2e04cfee6c44 rr:predicate schema:height .
+
+km-dev:RefObjectMap_a8c98882-da31-43f8-8afb-755aa29117c0 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6fc326f1-9a8e-4906-835a-906ff83083ce ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap km-dev:RefObjectMap_a8c98882-da31-43f8-8afb-755aa29117c0 .
+
+km-dev:PredicateObjectMap_54736f35-d0d4-41ba-8166-2e04cfee6c44 rr:objectMap km-dev:RefObjectMap_a8c98882-da31-43f8-8afb-755aa29117c0 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_54736f35-d0d4-41ba-8166-2e04cfee6c44 .
+
+km-dev:PredicateObjectMap_54736f35-d0d4-41ba-8166-2e04cfee6c44 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_54736f35-d0d4-41ba-8166-2e04cfee6c44 .
+
+km-dev:PredicateObjectMap_2031e64c-7043-406f-9e36-2e584b9845c0 rr:predicate schema:position .
+
+_:node19493psm4x8 rr:column "PrimaryAccession#" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x8 .
+
+km-dev:PredicateObjectMap_2031e64c-7043-406f-9e36-2e584b9845c0 rr:objectMap _:node19493psm4x8 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_2031e64c-7043-406f-9e36-2e584b9845c0 .
+
+km-dev:PredicateObjectMap_2031e64c-7043-406f-9e36-2e584b9845c0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2031e64c-7043-406f-9e36-2e584b9845c0 .
+
+km-dev:PredicateObjectMap_d75b638b-1a54-495f-bf03-c5a529e1b64b rr:predicate schema:sameAs .
+
+_:node19493psm4x9 rr:column "PaintingURL" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x9 .
+
+km-dev:PredicateObjectMap_d75b638b-1a54-495f-bf03-c5a529e1b64b rr:objectMap _:node19493psm4x9 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_d75b638b-1a54-495f-bf03-c5a529e1b64b .
+
+km-dev:PredicateObjectMap_d75b638b-1a54-495f-bf03-c5a529e1b64b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d75b638b-1a54-495f-bf03-c5a529e1b64b .
+
+km-dev:PredicateObjectMap_2d50aa10-e2a7-460d-91ee-fd39d89e0a38 rr:predicate schema:thumbnailUrl .
+
+_:node19493psm4x10 rr:column "ImageURL" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x10 .
+
+km-dev:PredicateObjectMap_2d50aa10-e2a7-460d-91ee-fd39d89e0a38 rr:objectMap _:node19493psm4x10 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_2d50aa10-e2a7-460d-91ee-fd39d89e0a38 .
+
+km-dev:PredicateObjectMap_2d50aa10-e2a7-460d-91ee-fd39d89e0a38 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2d50aa10-e2a7-460d-91ee-fd39d89e0a38 .
+
+km-dev:PredicateObjectMap_e99e940e-ecad-4dd6-9a50-632062773fa2 rr:predicate schema:unitCode .
+
+_:node19493psm4x11 rr:column "DimensionsUnit" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x11 .
+
+km-dev:PredicateObjectMap_e99e940e-ecad-4dd6-9a50-632062773fa2 rr:objectMap _:node19493psm4x11 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_e99e940e-ecad-4dd6-9a50-632062773fa2 .
+
+km-dev:PredicateObjectMap_e99e940e-ecad-4dd6-9a50-632062773fa2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e99e940e-ecad-4dd6-9a50-632062773fa2 .
+
+km-dev:PredicateObjectMap_debff4cd-313b-4a14-8477-fbd4dce77a86 rr:predicate schema:unitCode .
+
+_:node19493psm4x12 rr:column "DimensionInches" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x12 .
+
+km-dev:PredicateObjectMap_debff4cd-313b-4a14-8477-fbd4dce77a86 rr:objectMap _:node19493psm4x12 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_debff4cd-313b-4a14-8477-fbd4dce77a86 .
+
+km-dev:PredicateObjectMap_debff4cd-313b-4a14-8477-fbd4dce77a86 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_debff4cd-313b-4a14-8477-fbd4dce77a86 .
+
+km-dev:PredicateObjectMap_3141ece6-b033-4b33-93e9-4ae49eafc1e7 rr:predicate schema:width .
+
+_:node19493psm4x13 rr:column "DimensionsCentimeterWidth" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x13 .
+
+km-dev:PredicateObjectMap_3141ece6-b033-4b33-93e9-4ae49eafc1e7 rr:objectMap _:node19493psm4x13 .
+
+km-dev:TriplesMap_f70db201-33d3-495d-aea8-5bdc9c083f58 rr:predicateObjectMap km-dev:PredicateObjectMap_3141ece6-b033-4b33-93e9-4ae49eafc1e7 .
+
+km-dev:PredicateObjectMap_3141ece6-b033-4b33-93e9-4ae49eafc1e7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3141ece6-b033-4b33-93e9-4ae49eafc1e7 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 a rr:TriplesMap .
+
+_:node19493psm4x1 km-dev:hasTriplesMap km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x14 rr:tableName "PaintingRecordsJSON.json-WSP1WS1.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasLogicalTable _:node19493psm4x14 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 rr:logicalTable _:node19493psm4x14 ;
+	rr:subjectMap _:node19493psm4x15 .
+
+_:node19493psm4x1 km-dev:hasSubjectMap _:node19493psm4x15 .
+
+_:node19493psm4x15 km-dev:isPartOfMapping _:node19493psm4x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Person1" ;
+	rr:class schema:Person ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:Person1" .
+
+km-dev:PredicateObjectMap_2b6e7572-3db5-458f-8807-5e8d6db3e4d8 rr:predicate schema:addressRegion .
+
+_:node19493psm4x16 rr:column "BirthPlace" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x16 .
+
+km-dev:PredicateObjectMap_2b6e7572-3db5-458f-8807-5e8d6db3e4d8 rr:objectMap _:node19493psm4x16 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 rr:predicateObjectMap km-dev:PredicateObjectMap_2b6e7572-3db5-458f-8807-5e8d6db3e4d8 .
+
+km-dev:PredicateObjectMap_2b6e7572-3db5-458f-8807-5e8d6db3e4d8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2b6e7572-3db5-458f-8807-5e8d6db3e4d8 .
+
+km-dev:PredicateObjectMap_4461c632-851a-49f5-9efa-c3750b31b0ab rr:predicate schema:birthDate .
+
+_:node19493psm4x17 rr:column "BirthDate" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x17 .
+
+km-dev:PredicateObjectMap_4461c632-851a-49f5-9efa-c3750b31b0ab rr:objectMap _:node19493psm4x17 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 rr:predicateObjectMap km-dev:PredicateObjectMap_4461c632-851a-49f5-9efa-c3750b31b0ab .
+
+km-dev:PredicateObjectMap_4461c632-851a-49f5-9efa-c3750b31b0ab a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4461c632-851a-49f5-9efa-c3750b31b0ab .
+
+km-dev:PredicateObjectMap_05ec0fc7-6473-48c6-9f4a-d24758c51ecc rr:predicate schema:deathDate .
+
+_:node19493psm4x18 rr:column "DeathDate" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x18 .
+
+km-dev:PredicateObjectMap_05ec0fc7-6473-48c6-9f4a-d24758c51ecc rr:objectMap _:node19493psm4x18 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 rr:predicateObjectMap km-dev:PredicateObjectMap_05ec0fc7-6473-48c6-9f4a-d24758c51ecc .
+
+km-dev:PredicateObjectMap_05ec0fc7-6473-48c6-9f4a-d24758c51ecc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_05ec0fc7-6473-48c6-9f4a-d24758c51ecc .
+
+km-dev:PredicateObjectMap_780e5362-f47c-47d9-ab0a-e340a81f3288 rr:predicate schema:sameAs .
+
+_:node19493psm4x19 rr:column "ArtistDataURL" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x19 .
+
+km-dev:PredicateObjectMap_780e5362-f47c-47d9-ab0a-e340a81f3288 rr:objectMap _:node19493psm4x19 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 rr:predicateObjectMap km-dev:PredicateObjectMap_780e5362-f47c-47d9-ab0a-e340a81f3288 .
+
+km-dev:PredicateObjectMap_780e5362-f47c-47d9-ab0a-e340a81f3288 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_780e5362-f47c-47d9-ab0a-e340a81f3288 .
+
+km-dev:PredicateObjectMap_68277025-2d82-4a4f-b3e6-01222df02267 rr:predicate schema:addressRegion .
+
+_:node19493psm4x20 rr:column "DeathPlace" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x20 .
+
+km-dev:PredicateObjectMap_68277025-2d82-4a4f-b3e6-01222df02267 rr:objectMap _:node19493psm4x20 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 rr:predicateObjectMap km-dev:PredicateObjectMap_68277025-2d82-4a4f-b3e6-01222df02267 .
+
+km-dev:PredicateObjectMap_68277025-2d82-4a4f-b3e6-01222df02267 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_68277025-2d82-4a4f-b3e6-01222df02267 .
+
+km-dev:PredicateObjectMap_d8e430f7-6670-431a-a59d-412763b810af rr:predicate rdfs:label .
+
+_:node19493psm4x21 rr:column "DeathPlace" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x21 .
+
+km-dev:PredicateObjectMap_d8e430f7-6670-431a-a59d-412763b810af rr:objectMap _:node19493psm4x21 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 rr:predicateObjectMap km-dev:PredicateObjectMap_d8e430f7-6670-431a-a59d-412763b810af .
+
+km-dev:PredicateObjectMap_d8e430f7-6670-431a-a59d-412763b810af a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d8e430f7-6670-431a-a59d-412763b810af .
+
+km-dev:PredicateObjectMap_d1534826-c9f5-4988-9df8-04e1d229c07f rr:predicate rdfs:label .
+
+_:node19493psm4x22 rr:column "ArtistName" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x22 .
+
+km-dev:PredicateObjectMap_d1534826-c9f5-4988-9df8-04e1d229c07f rr:objectMap _:node19493psm4x22 .
+
+km-dev:TriplesMap_6404bba0-c352-4690-b296-f9c30e437530 rr:predicateObjectMap km-dev:PredicateObjectMap_d1534826-c9f5-4988-9df8-04e1d229c07f .
+
+km-dev:PredicateObjectMap_d1534826-c9f5-4988-9df8-04e1d229c07f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d1534826-c9f5-4988-9df8-04e1d229c07f .
+
+km-dev:TriplesMap_6fc326f1-9a8e-4906-835a-906ff83083ce a rr:TriplesMap .
+
+_:node19493psm4x1 km-dev:hasTriplesMap km-dev:TriplesMap_6fc326f1-9a8e-4906-835a-906ff83083ce .
+
+km-dev:TriplesMap_6fc326f1-9a8e-4906-835a-906ff83083ce km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x23 rr:tableName "PaintingRecordsJSON.json-WSP1WS1.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasLogicalTable _:node19493psm4x23 .
+
+km-dev:TriplesMap_6fc326f1-9a8e-4906-835a-906ff83083ce rr:logicalTable _:node19493psm4x23 ;
+	rr:subjectMap _:node19493psm4x24 .
+
+_:node19493psm4x1 km-dev:hasSubjectMap _:node19493psm4x24 .
+
+_:node19493psm4x24 km-dev:isPartOfMapping _:node19493psm4x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing1" ;
+	rr:class owl:Thing ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "owl:Thing1" .
+
+km-dev:PredicateObjectMap_14bfca58-b55b-4933-81c3-c77e1cf976d5 rr:predicate schema:height .
+
+_:node19493psm4x25 rr:column "DimensionsCentimeterLength" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x25 .
+
+km-dev:PredicateObjectMap_14bfca58-b55b-4933-81c3-c77e1cf976d5 rr:objectMap _:node19493psm4x25 .
+
+km-dev:TriplesMap_6fc326f1-9a8e-4906-835a-906ff83083ce rr:predicateObjectMap km-dev:PredicateObjectMap_14bfca58-b55b-4933-81c3-c77e1cf976d5 .
+
+km-dev:PredicateObjectMap_14bfca58-b55b-4933-81c3-c77e1cf976d5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_14bfca58-b55b-4933-81c3-c77e1cf976d5 .
+
+km-dev:PredicateObjectMap_cd3b1652-310f-406f-81ce-fe12d78cb8f9 rr:predicate schema:sameAs .
+
+_:node19493psm4x26 rr:column "DimensionsCentimeterHeight" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasObjectMap _:node19493psm4x26 .
+
+km-dev:PredicateObjectMap_cd3b1652-310f-406f-81ce-fe12d78cb8f9 rr:objectMap _:node19493psm4x26 .
+
+km-dev:TriplesMap_6fc326f1-9a8e-4906-835a-906ff83083ce rr:predicateObjectMap km-dev:PredicateObjectMap_cd3b1652-310f-406f-81ce-fe12d78cb8f9 .
+
+km-dev:PredicateObjectMap_cd3b1652-310f-406f-81ce-fe12d78cb8f9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19493psm4x1 .
+
+_:node19493psm4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cd3b1652-310f-406f-81ce-fe12d78cb8f9 .
