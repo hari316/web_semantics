@@ -1,0 +1,48 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cs586: <http://www.semanticweb.org/CS586/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX local: <http://localhost:8080/source/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT  ?Pname ?type ?loc
+WHERE 
+{
+
+{
+?pl cs586:PlayerName ?Pname;
+    dcterms:type ?p;
+    cs586:MemberOf ?team.
+?team cs586:TeamName ?loc.
+ ?p rdf:type ?type .
+?p rdf:type <http://www.semanticweb.org/CS586#CricketPlayer>.
+FILTER(regex(?loc,"England"))
+}
+
+UNION
+{
+?pl cs586:PlayerName ?Pname;
+    dcterms:type ?p;
+    cs586:Nationality ?loc;
+    cs586:MemberOf ?team.
+?team cs586:TeamName ?tname.
+?p rdf:type ?type  .
+?p rdf:type <http://www.semanticweb.org/CS586#FootballPlayer>.
+FILTER(regex(?loc,"ENG"))
+
+}
+
+UNION
+{
+?pl cs586:PlayerName ?Pname;
+   
+    dcterms:type ?p.
+  
+ ?p rdf:type ?type. 
+?p rdf:type <http://www.semanticweb.org/CS586#TennisPlayer>;
+    <http://www.semanticweb.org/CS586/BornIn> ?n.
+?n cs586:LocationName ?loc.
+FILTER(regex(?loc,"England"))
+}
+
+}
