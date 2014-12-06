@@ -1,0 +1,527 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node198494dbsx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Player Ranking final_Sheet1" ;
+	km-dev:modelPublicationTime "1417483007355"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Name\"}],[{\"columnName\":\"Type\"}],[{\"columnName\":\"Rat\"}],[{\"columnName\":\"Pos\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Name\"}],[{\"columnName\":\"Type\"}],[{\"columnName\":\"Rat\"}],[{\"columnName\":\"Pos\"}]]" ;
+	km-dev:hasModelLabel "Player Ranking final_Sheet1" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Name\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/PlayerName\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Players/Players1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Players1 (add)\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Players\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Name\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/PlayerName\",
+                    \"DomainLabel\": \"Players1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Players1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Players\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Pos\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/RankValue\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Rank1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Rank1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Rank\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:integer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Pos\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Pos\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Rat\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/bestRating\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#CricketPlayer/CricketPlayer1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#CricketPlayer1 (add)\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#CricketPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Rat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Rat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Type\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TournamentType\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Tournaments/Tournaments1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Tournaments1 (add)\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Tournaments\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_9fa82cde-824d-4243-900a-9264fa6c8ba2 a rr:TriplesMap .
+
+_:node198494dbsx1 km-dev:hasTriplesMap km-dev:TriplesMap_9fa82cde-824d-4243-900a-9264fa6c8ba2 .
+
+km-dev:TriplesMap_9fa82cde-824d-4243-900a-9264fa6c8ba2 km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx2 rr:tableName "Player Ranking final_Sheet1" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasLogicalTable _:node198494dbsx2 .
+
+km-dev:TriplesMap_9fa82cde-824d-4243-900a-9264fa6c8ba2 rr:logicalTable _:node198494dbsx2 ;
+	rr:subjectMap _:node198494dbsx3 .
+
+_:node198494dbsx1 km-dev:hasSubjectMap _:node198494dbsx3 .
+
+_:node198494dbsx3 km-dev:isPartOfMapping _:node198494dbsx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#CricketPlayer1" ;
+	rr:class <http://www.semanticweb.org/CS586#CricketPlayer> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "CricketPlayer1" .
+
+km-dev:PredicateObjectMap_41991ca4-24c8-43bf-84f4-e7ddd272ad60 rr:predicate schema:bestRating .
+
+_:node198494dbsx4 rr:column "Rat" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasObjectMap _:node198494dbsx4 .
+
+km-dev:PredicateObjectMap_41991ca4-24c8-43bf-84f4-e7ddd272ad60 rr:objectMap _:node198494dbsx4 .
+
+km-dev:TriplesMap_9fa82cde-824d-4243-900a-9264fa6c8ba2 rr:predicateObjectMap km-dev:PredicateObjectMap_41991ca4-24c8-43bf-84f4-e7ddd272ad60 .
+
+km-dev:PredicateObjectMap_41991ca4-24c8-43bf-84f4-e7ddd272ad60 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_41991ca4-24c8-43bf-84f4-e7ddd272ad60 .
+
+km-dev:PredicateObjectMap_230fc207-5ec2-488f-ae25-9c2982feb4f3 rr:predicate <http://www.semanticweb.org/CS586/HasRank> .
+
+km-dev:RefObjectMap_f605fd3c-7472-4a37-afeb-20d169f4d2f7 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2060bf8c-945e-47d4-879e-3bf0666a8f65 ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasObjectMap km-dev:RefObjectMap_f605fd3c-7472-4a37-afeb-20d169f4d2f7 .
+
+km-dev:PredicateObjectMap_230fc207-5ec2-488f-ae25-9c2982feb4f3 rr:objectMap km-dev:RefObjectMap_f605fd3c-7472-4a37-afeb-20d169f4d2f7 .
+
+km-dev:TriplesMap_9fa82cde-824d-4243-900a-9264fa6c8ba2 rr:predicateObjectMap km-dev:PredicateObjectMap_230fc207-5ec2-488f-ae25-9c2982feb4f3 .
+
+km-dev:PredicateObjectMap_230fc207-5ec2-488f-ae25-9c2982feb4f3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_230fc207-5ec2-488f-ae25-9c2982feb4f3 .
+
+km-dev:TriplesMap_2060bf8c-945e-47d4-879e-3bf0666a8f65 a rr:TriplesMap .
+
+_:node198494dbsx1 km-dev:hasTriplesMap km-dev:TriplesMap_2060bf8c-945e-47d4-879e-3bf0666a8f65 .
+
+km-dev:TriplesMap_2060bf8c-945e-47d4-879e-3bf0666a8f65 km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx5 rr:tableName "Player Ranking final_Sheet1" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasLogicalTable _:node198494dbsx5 .
+
+km-dev:TriplesMap_2060bf8c-945e-47d4-879e-3bf0666a8f65 rr:logicalTable _:node198494dbsx5 ;
+	rr:subjectMap _:node198494dbsx6 .
+
+_:node198494dbsx1 km-dev:hasSubjectMap _:node198494dbsx6 .
+
+_:node198494dbsx6 km-dev:isPartOfMapping _:node198494dbsx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#Rank1" ;
+	rr:class <http://www.semanticweb.org/CS586#Rank> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Rank1" .
+
+km-dev:PredicateObjectMap_3a38c429-69cb-4378-b0b3-ed3dad73ac98 rr:predicate <http://www.semanticweb.org/CS586/RankValue> .
+
+_:node198494dbsx7 rr:column "Pos" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasObjectMap _:node198494dbsx7 .
+
+km-dev:PredicateObjectMap_3a38c429-69cb-4378-b0b3-ed3dad73ac98 rr:objectMap _:node198494dbsx7 .
+
+km-dev:TriplesMap_2060bf8c-945e-47d4-879e-3bf0666a8f65 rr:predicateObjectMap km-dev:PredicateObjectMap_3a38c429-69cb-4378-b0b3-ed3dad73ac98 .
+
+km-dev:PredicateObjectMap_3a38c429-69cb-4378-b0b3-ed3dad73ac98 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3a38c429-69cb-4378-b0b3-ed3dad73ac98 .
+
+km-dev:TriplesMap_c7cc96ce-921a-455f-b5b4-64cd031d361d a rr:TriplesMap .
+
+_:node198494dbsx1 km-dev:hasTriplesMap km-dev:TriplesMap_c7cc96ce-921a-455f-b5b4-64cd031d361d .
+
+km-dev:TriplesMap_c7cc96ce-921a-455f-b5b4-64cd031d361d km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx8 rr:tableName "Player Ranking final_Sheet1" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasLogicalTable _:node198494dbsx8 .
+
+km-dev:TriplesMap_c7cc96ce-921a-455f-b5b4-64cd031d361d rr:logicalTable _:node198494dbsx8 ;
+	rr:subjectMap _:node198494dbsx9 .
+
+_:node198494dbsx1 km-dev:hasSubjectMap _:node198494dbsx9 .
+
+_:node198494dbsx9 km-dev:isPartOfMapping _:node198494dbsx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#Players1" ;
+	rr:class <http://www.semanticweb.org/CS586#Players> ;
+	rr:template "http://localhost:8080/source/{Name}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_ab929ccd-cc3e-459a-9a7f-9ec44b2bf281 rr:predicate <http://www.semanticweb.org/CS586/HasRank> .
+
+km-dev:RefObjectMap_7d9152b3-dd8a-4c4a-8be2-bc785b43b36f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2060bf8c-945e-47d4-879e-3bf0666a8f65 ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasObjectMap km-dev:RefObjectMap_7d9152b3-dd8a-4c4a-8be2-bc785b43b36f .
+
+km-dev:PredicateObjectMap_ab929ccd-cc3e-459a-9a7f-9ec44b2bf281 rr:objectMap km-dev:RefObjectMap_7d9152b3-dd8a-4c4a-8be2-bc785b43b36f .
+
+km-dev:TriplesMap_c7cc96ce-921a-455f-b5b4-64cd031d361d rr:predicateObjectMap km-dev:PredicateObjectMap_ab929ccd-cc3e-459a-9a7f-9ec44b2bf281 .
+
+km-dev:PredicateObjectMap_ab929ccd-cc3e-459a-9a7f-9ec44b2bf281 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ab929ccd-cc3e-459a-9a7f-9ec44b2bf281 .
+
+km-dev:PredicateObjectMap_ff950d6b-436c-4b03-a57c-bd49fafb184c rr:predicate <http://www.semanticweb.org/CS586/PlayerName> .
+
+_:node198494dbsx10 rr:column "Name" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasObjectMap _:node198494dbsx10 .
+
+km-dev:PredicateObjectMap_ff950d6b-436c-4b03-a57c-bd49fafb184c rr:objectMap _:node198494dbsx10 .
+
+km-dev:TriplesMap_c7cc96ce-921a-455f-b5b4-64cd031d361d rr:predicateObjectMap km-dev:PredicateObjectMap_ff950d6b-436c-4b03-a57c-bd49fafb184c .
+
+km-dev:PredicateObjectMap_ff950d6b-436c-4b03-a57c-bd49fafb184c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ff950d6b-436c-4b03-a57c-bd49fafb184c .
+
+km-dev:PredicateObjectMap_99969dec-3b2b-4581-bb86-09397686d553 rr:predicate <http://www.semanticweb.org/CS586/ParticipatesIn> .
+
+km-dev:RefObjectMap_33c6eb51-6ff8-458b-80d6-7f3e0f8df631 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_cd664fde-d35d-4d66-a97a-f97ba5c000fd ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasObjectMap km-dev:RefObjectMap_33c6eb51-6ff8-458b-80d6-7f3e0f8df631 .
+
+km-dev:PredicateObjectMap_99969dec-3b2b-4581-bb86-09397686d553 rr:objectMap km-dev:RefObjectMap_33c6eb51-6ff8-458b-80d6-7f3e0f8df631 .
+
+km-dev:TriplesMap_c7cc96ce-921a-455f-b5b4-64cd031d361d rr:predicateObjectMap km-dev:PredicateObjectMap_99969dec-3b2b-4581-bb86-09397686d553 .
+
+km-dev:PredicateObjectMap_99969dec-3b2b-4581-bb86-09397686d553 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_99969dec-3b2b-4581-bb86-09397686d553 .
+
+km-dev:TriplesMap_cd664fde-d35d-4d66-a97a-f97ba5c000fd a rr:TriplesMap .
+
+_:node198494dbsx1 km-dev:hasTriplesMap km-dev:TriplesMap_cd664fde-d35d-4d66-a97a-f97ba5c000fd .
+
+km-dev:TriplesMap_cd664fde-d35d-4d66-a97a-f97ba5c000fd km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx11 rr:tableName "Player Ranking final_Sheet1" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasLogicalTable _:node198494dbsx11 .
+
+km-dev:TriplesMap_cd664fde-d35d-4d66-a97a-f97ba5c000fd rr:logicalTable _:node198494dbsx11 ;
+	rr:subjectMap _:node198494dbsx12 .
+
+_:node198494dbsx1 km-dev:hasSubjectMap _:node198494dbsx12 .
+
+_:node198494dbsx12 km-dev:isPartOfMapping _:node198494dbsx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#Tournaments1" ;
+	rr:class <http://www.semanticweb.org/CS586#Tournaments> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Tournaments1" .
+
+km-dev:PredicateObjectMap_07fdbec0-f9be-47b3-a6cb-77335def794c rr:predicate <http://www.semanticweb.org/CS586/TournamentType> .
+
+_:node198494dbsx13 rr:column "Type" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasObjectMap _:node198494dbsx13 .
+
+km-dev:PredicateObjectMap_07fdbec0-f9be-47b3-a6cb-77335def794c rr:objectMap _:node198494dbsx13 .
+
+km-dev:TriplesMap_cd664fde-d35d-4d66-a97a-f97ba5c000fd rr:predicateObjectMap km-dev:PredicateObjectMap_07fdbec0-f9be-47b3-a6cb-77335def794c .
+
+km-dev:PredicateObjectMap_07fdbec0-f9be-47b3-a6cb-77335def794c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198494dbsx1 .
+
+_:node198494dbsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_07fdbec0-f9be-47b3-a6cb-77335def794c .

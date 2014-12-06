@@ -1,0 +1,121 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix cs586: <http://www.semanticweb.org/CS586/sports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1981urojpx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "australian_open.json" ;
+	km-dev:modelPublicationTime "1417405129338"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"year\"}],[{\"columnName\":\"score\"}],[{\"columnName\":\"tournament\"}],[{\"columnName\":\"winner\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"year\"}],[{\"columnName\":\"score\"}],[{\"columnName\":\"tournament\"}],[{\"columnName\":\"winner\"}]]" ;
+	km-dev:hasModelLabel "australian_open.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory "[{\"commandName\":\"SetSemanticTypeCommand\",\"inputParameters\":[{\"name\":\"hNodeId\",\"type\":\"hNodeId\",\"value\":[{\"columnName\":\"winner\"}]},{\"name\":\"worksheetId\",\"type\":\"worksheetId\",\"value\":\"W\"},{\"name\":\"selectionName\",\"type\":\"other\",\"value\":\"DEFAULT_TEST\"},{\"name\":\"SemanticTypesArray\",\"type\":\"other\",\"value\":[{\"DomainUri\":\"http://www.semanticweb.org/CS586#TennisTournament\",\"DomainId\":\"http://www.semanticweb.org/CS586#TennisTournament1 (add)\",\"isPrimary\":true,\"FullType\":\"http://www.semanticweb.org/CS586#t_tournament_winner\",\"DomainLabel\":\"http://www.semanticweb.org/CS586#TennisTournament/TennisTournament1 (add)\"}]},{\"name\":\"isKey\",\"type\":\"other\",\"value\":false},{\"name\":\"trainAndShowUpdates\",\"type\":\"other\",\"value\":false},{\"name\":\"rdfLiteralType\",\"type\":\"other\",\"value\":\"xsd:string\"},{\"name\":\"inputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"winner\\\"}]}]\"},{\"name\":\"outputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"winner\\\"}]}]\"}],\"tags\":[\"Modeling\"]},{\"commandName\":\"SetSemanticTypeCommand\",\"inputParameters\":[{\"name\":\"hNodeId\",\"type\":\"hNodeId\",\"value\":[{\"columnName\":\"tournament\"}]},{\"name\":\"worksheetId\",\"type\":\"worksheetId\",\"value\":\"W\"},{\"name\":\"selectionName\",\"type\":\"other\",\"value\":\"DEFAULT_TEST\"},{\"name\":\"SemanticTypesArray\",\"type\":\"other\",\"value\":[{\"DomainUri\":\"http://www.semanticweb.org/CS586#TennisTournament\",\"DomainId\":\"http://www.semanticweb.org/CS586#TennisTournament1\",\"isPrimary\":true,\"FullType\":\"http://www.semanticweb.org/CS586#t_tournament_name\",\"DomainLabel\":\"http://www.semanticweb.org/CS586#TennisTournament/TennisTournament1\"}]},{\"name\":\"isKey\",\"type\":\"other\",\"value\":false},{\"name\":\"trainAndShowUpdates\",\"type\":\"other\",\"value\":false},{\"name\":\"rdfLiteralType\",\"type\":\"other\",\"value\":\"xsd:string\"},{\"name\":\"inputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"tournament\\\"}]}]\"},{\"name\":\"outputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"tournament\\\"}]}]\"}],\"tags\":[\"Modeling\"]},{\"commandName\":\"SetSemanticTypeCommand\",\"inputParameters\":[{\"name\":\"hNodeId\",\"type\":\"hNodeId\",\"value\":[{\"columnName\":\"score\"}]},{\"name\":\"worksheetId\",\"type\":\"worksheetId\",\"value\":\"W\"},{\"name\":\"selectionName\",\"type\":\"other\",\"value\":\"DEFAULT_TEST\"},{\"name\":\"SemanticTypesArray\",\"type\":\"other\",\"value\":[{\"DomainUri\":\"http://www.semanticweb.org/CS586#TennisTournament\",\"DomainId\":\"http://www.semanticweb.org/CS586#TennisTournament1\",\"isPrimary\":true,\"FullType\":\"http://www.semanticweb.org/CS586#t_tournament_score\",\"DomainLabel\":\"http://www.semanticweb.org/CS586#TennisTournament/TennisTournament1\"}]},{\"name\":\"isKey\",\"type\":\"other\",\"value\":false},{\"name\":\"trainAndShowUpdates\",\"type\":\"other\",\"value\":false},{\"name\":\"rdfLiteralType\",\"type\":\"other\",\"value\":\"xsd:boolean\"},{\"name\":\"inputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"score\\\"}]}]\"},{\"name\":\"outputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"score\\\"}]}]\"}],\"tags\":[\"Modeling\"]},{\"commandName\":\"SetSemanticTypeCommand\",\"inputParameters\":[{\"name\":\"hNodeId\",\"type\":\"hNodeId\",\"value\":[{\"columnName\":\"year\"}]},{\"name\":\"worksheetId\",\"type\":\"worksheetId\",\"value\":\"W\"},{\"name\":\"selectionName\",\"type\":\"other\",\"value\":\"DEFAULT_TEST\"},{\"name\":\"SemanticTypesArray\",\"type\":\"other\",\"value\":[{\"DomainUri\":\"http://www.semanticweb.org/CS586#TennisTournament\",\"DomainId\":\"http://www.semanticweb.org/CS586#TennisTournament1\",\"isPrimary\":true,\"FullType\":\"http://www.semanticweb.org/CS586#t_player_turned_pro\",\"DomainLabel\":\"http://www.semanticweb.org/CS586#TennisTournament/TennisTournament1\"}]},{\"name\":\"isKey\",\"type\":\"other\",\"value\":false},{\"name\":\"trainAndShowUpdates\",\"type\":\"other\",\"value\":false},{\"name\":\"rdfLiteralType\",\"type\":\"other\",\"value\":\"interger\"},{\"name\":\"inputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"year\\\"}]}]\"},{\"name\":\"outputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"year\\\"}]}]\"}],\"tags\":[\"Modeling\"]},{\"commandName\":\"SetSemanticTypeCommand\",\"inputParameters\":[{\"name\":\"hNodeId\",\"type\":\"hNodeId\",\"value\":[{\"columnName\":\"year\"}]},{\"name\":\"worksheetId\",\"type\":\"worksheetId\",\"value\":\"W\"},{\"name\":\"selectionName\",\"type\":\"other\",\"value\":\"DEFAULT_TEST\"},{\"name\":\"SemanticTypesArray\",\"type\":\"other\",\"value\":[{\"DomainUri\":\"http://www.semanticweb.org/CS586#TennisTournament\",\"DomainId\":\"http://www.semanticweb.org/CS586#TennisTournament1\",\"isPrimary\":true,\"FullType\":\"http://www.semanticweb.org/CS586#t_player_turned_pro\",\"DomainLabel\":\"TennisTournament1\"}]},{\"name\":\"isKey\",\"type\":\"other\",\"value\":false},{\"name\":\"trainAndShowUpdates\",\"type\":\"other\",\"value\":false},{\"name\":\"rdfLiteralType\",\"type\":\"other\",\"value\":\"xsd:integer\"},{\"name\":\"inputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"year\\\"}]}]\"},{\"name\":\"outputColumns\",\"type\":\"hNodeIdList\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"year\\\"}]}]\"}],\"tags\":[\"Modeling\"]}]" .
+
+km-dev:TriplesMap_b495619f-8f2d-4b8a-9b02-ce4460022ea5 a rr:TriplesMap .
+
+_:node1981urojpx1 km-dev:hasTriplesMap km-dev:TriplesMap_b495619f-8f2d-4b8a-9b02-ce4460022ea5 .
+
+km-dev:TriplesMap_b495619f-8f2d-4b8a-9b02-ce4460022ea5 km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx2 rr:tableName "australian_open.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx1 km-dev:hasLogicalTable _:node1981urojpx2 .
+
+km-dev:TriplesMap_b495619f-8f2d-4b8a-9b02-ce4460022ea5 rr:logicalTable _:node1981urojpx2 ;
+	rr:subjectMap _:node1981urojpx3 .
+
+_:node1981urojpx1 km-dev:hasSubjectMap _:node1981urojpx3 .
+
+_:node1981urojpx3 km-dev:isPartOfMapping _:node1981urojpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#TennisTournament1" ;
+	rr:class <http://www.semanticweb.org/CS586#TennisTournament> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "TennisTournament1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_c50bcb53-69fb-41ba-801f-c14b45274e45 rr:predicate <http://www.semanticweb.org/CS586#t_player_turned_pro> .
+
+_:node1981urojpx4 rr:column "year" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx1 km-dev:hasObjectMap _:node1981urojpx4 .
+
+km-dev:PredicateObjectMap_c50bcb53-69fb-41ba-801f-c14b45274e45 rr:objectMap _:node1981urojpx4 .
+
+km-dev:TriplesMap_b495619f-8f2d-4b8a-9b02-ce4460022ea5 rr:predicateObjectMap km-dev:PredicateObjectMap_c50bcb53-69fb-41ba-801f-c14b45274e45 .
+
+km-dev:PredicateObjectMap_c50bcb53-69fb-41ba-801f-c14b45274e45 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c50bcb53-69fb-41ba-801f-c14b45274e45 .
+
+km-dev:PredicateObjectMap_be916cc1-50b0-40c5-8bd3-0fd6148d44b6 rr:predicate <http://www.semanticweb.org/CS586#t_tournament_name> .
+
+_:node1981urojpx5 rr:column "tournament" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx1 km-dev:hasObjectMap _:node1981urojpx5 .
+
+km-dev:PredicateObjectMap_be916cc1-50b0-40c5-8bd3-0fd6148d44b6 rr:objectMap _:node1981urojpx5 .
+
+km-dev:TriplesMap_b495619f-8f2d-4b8a-9b02-ce4460022ea5 rr:predicateObjectMap km-dev:PredicateObjectMap_be916cc1-50b0-40c5-8bd3-0fd6148d44b6 .
+
+km-dev:PredicateObjectMap_be916cc1-50b0-40c5-8bd3-0fd6148d44b6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_be916cc1-50b0-40c5-8bd3-0fd6148d44b6 .
+
+km-dev:PredicateObjectMap_95fabf50-2ceb-411b-ae1e-5667cfade7a0 rr:predicate <http://www.semanticweb.org/CS586#t_tournament_score> .
+
+_:node1981urojpx6 rr:column "score" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#boolean" ;
+	km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx1 km-dev:hasObjectMap _:node1981urojpx6 .
+
+km-dev:PredicateObjectMap_95fabf50-2ceb-411b-ae1e-5667cfade7a0 rr:objectMap _:node1981urojpx6 .
+
+km-dev:TriplesMap_b495619f-8f2d-4b8a-9b02-ce4460022ea5 rr:predicateObjectMap km-dev:PredicateObjectMap_95fabf50-2ceb-411b-ae1e-5667cfade7a0 .
+
+km-dev:PredicateObjectMap_95fabf50-2ceb-411b-ae1e-5667cfade7a0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_95fabf50-2ceb-411b-ae1e-5667cfade7a0 .
+
+km-dev:PredicateObjectMap_5c5d039d-0c8d-4042-9430-6c65a57aa4f3 rr:predicate <http://www.semanticweb.org/CS586#t_tournament_winner> .
+
+_:node1981urojpx7 rr:column "winner" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx1 km-dev:hasObjectMap _:node1981urojpx7 .
+
+km-dev:PredicateObjectMap_5c5d039d-0c8d-4042-9430-6c65a57aa4f3 rr:objectMap _:node1981urojpx7 .
+
+km-dev:TriplesMap_b495619f-8f2d-4b8a-9b02-ce4460022ea5 rr:predicateObjectMap km-dev:PredicateObjectMap_5c5d039d-0c8d-4042-9430-6c65a57aa4f3 .
+
+km-dev:PredicateObjectMap_5c5d039d-0c8d-4042-9430-6c65a57aa4f3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981urojpx1 .
+
+_:node1981urojpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5c5d039d-0c8d-4042-9430-6c65a57aa4f3 .

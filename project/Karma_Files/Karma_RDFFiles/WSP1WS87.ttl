@@ -1,0 +1,90 @@
+_:TennisTournament1_N94_N98_N92_N96 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<string> .
+_:TennisTournament1_N94_N98_N92_N96 <http://www.semanticweb.org/CS586#t_tournament_year> "2014"^^<integer> .
+_:TennisTournament1_N94_N98_N92_N96 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N94_N98_N92_N96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N94_N98_N92_N96 <http://www.semanticweb.org/CS586#t_tournament_score> "3-6, 7-5, 6-2, 6-4"^^<string> .
+
+_:TennisTournament1_N103_N101_N100_N102 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N103_N101_N100_N102 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<string> .
+_:TennisTournament1_N103_N101_N100_N102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N103_N101_N100_N102 <http://www.semanticweb.org/CS586#t_tournament_year> "2013"^^<integer> .
+_:TennisTournament1_N103_N101_N100_N102 <http://www.semanticweb.org/CS586#t_tournament_score> "6-3, 6-2, 6-3"^^<string> .
+
+_:TennisTournament1_N108_N106_N105_N107 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N108_N106_N105_N107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N108_N106_N105_N107 <http://www.semanticweb.org/CS586#t_tournament_score> "6-4, 6-3, 2-6, 7-5"^^<string> .
+_:TennisTournament1_N108_N106_N105_N107 <http://www.semanticweb.org/CS586#t_tournament_year> "2012"^^<integer> .
+_:TennisTournament1_N108_N106_N105_N107 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<string> .
+
+_:TennisTournament1_N113_N111_N110_N112 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<string> .
+_:TennisTournament1_N113_N111_N110_N112 <http://www.semanticweb.org/CS586#t_tournament_score> "7-5, 7-6(3), 5-7, 6-1"^^<string> .
+_:TennisTournament1_N113_N111_N110_N112 <http://www.semanticweb.org/CS586#t_tournament_year> "2011"^^<integer> .
+_:TennisTournament1_N113_N111_N110_N112 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N113_N111_N110_N112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+
+_:TennisTournament1_N118_N116_N115_N117 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N118_N116_N115_N117 <http://www.semanticweb.org/CS586#t_tournament_year> "2010"^^<integer> .
+_:TennisTournament1_N118_N116_N115_N117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N118_N116_N115_N117 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<string> .
+_:TennisTournament1_N118_N116_N115_N117 <http://www.semanticweb.org/CS586#t_tournament_score> "6-4, 6-2, 6-4"^^<string> .
+
+_:TennisTournament1_N123_N121_N120_N122 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N123_N121_N120_N122 <http://www.semanticweb.org/CS586#t_tournament_winner> "Roger Federer"^^<string> .
+_:TennisTournament1_N123_N121_N120_N122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N123_N121_N120_N122 <http://www.semanticweb.org/CS586#t_tournament_score> "6-1, 7-6(1), 6-4"^^<string> .
+_:TennisTournament1_N123_N121_N120_N122 <http://www.semanticweb.org/CS586#t_tournament_year> "2009"^^<integer> .
+
+_:TennisTournament1_N128_N126_N125_N127 <http://www.semanticweb.org/CS586#t_tournament_year> "2008"^^<integer> .
+_:TennisTournament1_N128_N126_N125_N127 <http://www.semanticweb.org/CS586#t_tournament_score> "6-1, 6-3, 6-0"^^<string> .
+_:TennisTournament1_N128_N126_N125_N127 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N128_N126_N125_N127 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<string> .
+_:TennisTournament1_N128_N126_N125_N127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+
+_:TennisTournament1_N133_N131_N130_N132 <http://www.semanticweb.org/CS586#t_tournament_year> "2007"^^<integer> .
+_:TennisTournament1_N133_N131_N130_N132 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<string> .
+_:TennisTournament1_N133_N131_N130_N132 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N133_N131_N130_N132 <http://www.semanticweb.org/CS586#t_tournament_score> "6-3, 4-6, 6-3, 6-4"^^<string> .
+_:TennisTournament1_N133_N131_N130_N132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+
+_:TennisTournament1_N138_N136_N135_N137 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N138_N136_N135_N137 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<string> .
+_:TennisTournament1_N138_N136_N135_N137 <http://www.semanticweb.org/CS586#t_tournament_year> "2006"^^<integer> .
+_:TennisTournament1_N138_N136_N135_N137 <http://www.semanticweb.org/CS586#t_tournament_score> "1-6, 6-1, 6-4, 7-6(4)"^^<string> .
+_:TennisTournament1_N138_N136_N135_N137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+
+_:TennisTournament1_N143_N141_N140_N142 <http://www.semanticweb.org/CS586#t_tournament_score> "6-7(6), 6-3, 6-1, 7-5"^^<string> .
+_:TennisTournament1_N143_N141_N140_N142 <http://www.semanticweb.org/CS586#t_tournament_year> "2005"^^<integer> .
+_:TennisTournament1_N143_N141_N140_N142 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N143_N141_N140_N142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N143_N141_N140_N142 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<string> .
+
+_:TennisTournament1_N148_N146_N145_N147 <http://www.semanticweb.org/CS586#t_tournament_winner> "Gaston Gaudio"^^<string> .
+_:TennisTournament1_N148_N146_N145_N147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N148_N146_N145_N147 <http://www.semanticweb.org/CS586#t_tournament_score> "0-6, 3-6, 6-4, 6-1, 8-6"^^<string> .
+_:TennisTournament1_N148_N146_N145_N147 <http://www.semanticweb.org/CS586#t_tournament_year> "2004"^^<integer> .
+_:TennisTournament1_N148_N146_N145_N147 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+
+_:TennisTournament1_N153_N151_N150_N152 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N153_N151_N150_N152 <http://www.semanticweb.org/CS586#t_tournament_score> "6-1, 6-3, 6-2"^^<string> .
+_:TennisTournament1_N153_N151_N150_N152 <http://www.semanticweb.org/CS586#t_tournament_year> "2003"^^<integer> .
+_:TennisTournament1_N153_N151_N150_N152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N153_N151_N150_N152 <http://www.semanticweb.org/CS586#t_tournament_winner> "Juan Carlos Ferrero"^^<string> .
+
+_:TennisTournament1_N158_N156_N155_N157 <http://www.semanticweb.org/CS586#t_tournament_winner> "Albert Costa"^^<string> .
+_:TennisTournament1_N158_N156_N155_N157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N158_N156_N155_N157 <http://www.semanticweb.org/CS586#t_tournament_score> "6-1, 6-0, 4-6, 6-3"^^<string> .
+_:TennisTournament1_N158_N156_N155_N157 <http://www.semanticweb.org/CS586#t_tournament_year> "2002"^^<integer> .
+_:TennisTournament1_N158_N156_N155_N157 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+
+_:TennisTournament1_N163_N161_N160_N162 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N163_N161_N160_N162 <http://www.semanticweb.org/CS586#t_tournament_winner> "Gustavo Kuerten"^^<string> .
+_:TennisTournament1_N163_N161_N160_N162 <http://www.semanticweb.org/CS586#t_tournament_score> "6-7(3), 7-5, 6-2, 6-0"^^<string> .
+_:TennisTournament1_N163_N161_N160_N162 <http://www.semanticweb.org/CS586#t_tournament_year> "2001"^^<integer> .
+_:TennisTournament1_N163_N161_N160_N162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+
+_:TennisTournament1_N168_N166_N165_N167 <http://www.semanticweb.org/CS586#t_player_history> "Roland Garros"^^<string> .
+_:TennisTournament1_N168_N166_N165_N167 <http://www.semanticweb.org/CS586#t_tournament_winner> "Gustavo Kuerten"^^<string> .
+_:TennisTournament1_N168_N166_N165_N167 <http://www.semanticweb.org/CS586#t_tournament_year> "2000"^^<integer> .
+_:TennisTournament1_N168_N166_N165_N167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N168_N166_N165_N167 <http://www.semanticweb.org/CS586#t_tournament_score> "6-2, 6-3, 2-6, 7-6(6)"^^<string> .
+

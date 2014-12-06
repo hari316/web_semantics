@@ -1,0 +1,33 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cs586: <http://www.semanticweb.org/CS586/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX local: <http://localhost:8080/source/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT  ?Pname
+WHERE 
+{
+
+{
+?pl cs586:PlayerName ?Pname;
+    dcterms:type ?p.
+?p cs586:CricketBatStyle ?batstyle.
+  
+?p rdf:type <http://www.semanticweb.org/CS586#CricketPlayer>.
+FILTER(regex(?batstyle,"Left-hand"))
+}
+
+UNION
+{
+
+?pl dcterms:type ?r;
+   cs586:PlayerName ?Pname.
+?r cs586:TennisPlays ?q.
+    
+
+
+FILTER(regex(?q,"Left-hand"))
+}
+
+}

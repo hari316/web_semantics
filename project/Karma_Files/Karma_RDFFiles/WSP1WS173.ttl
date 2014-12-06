@@ -1,0 +1,90 @@
+_:TennisTournament1_N180_N182_N184_N178 <http://www.semanticweb.org/CS586#t_tournament_score> "6-7(7), 6-4, 7-6(4), 5-7, 6-4"^^<string> .
+_:TennisTournament1_N180_N182_N184_N178 <http://www.semanticweb.org/CS586#t_tournament_year> "2014"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N180_N182_N184_N178 <http://www.semanticweb.org/CS586#t_tournament_winner> "Novak Djokovic"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N180_N182_N184_N178 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N180_N182_N184_N178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+
+_:TennisTournament1_N189_N187_N186_N188 <http://www.semanticweb.org/CS586#t_tournament_year> "2013"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N189_N187_N186_N188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N189_N187_N186_N188 <http://www.semanticweb.org/CS586#t_tournament_score> "6-4, 7-5, 6-4"^^<string> .
+_:TennisTournament1_N189_N187_N186_N188 <http://www.semanticweb.org/CS586#t_tournament_winner> "Andy Murray"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N189_N187_N186_N188 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+
+_:TennisTournament1_N194_N192_N191_N193 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N194_N192_N191_N193 <http://www.semanticweb.org/CS586#t_tournament_score> "4-6, 7-5, 6-3, 6-4"^^<string> .
+_:TennisTournament1_N194_N192_N191_N193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N194_N192_N191_N193 <http://www.semanticweb.org/CS586#t_tournament_winner> "Roger Federer"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N194_N192_N191_N193 <http://www.semanticweb.org/CS586#t_tournament_year> "2012"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+_:TennisTournament1_N199_N197_N196_N198 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N199_N197_N196_N198 <http://www.semanticweb.org/CS586#t_tournament_year> "2011"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N199_N197_N196_N198 <http://www.semanticweb.org/CS586#t_tournament_score> "6-4, 6-1, 1-6, 6-3"^^<string> .
+_:TennisTournament1_N199_N197_N196_N198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N199_N197_N196_N198 <http://www.semanticweb.org/CS586#t_tournament_winner> "Novak Djokovic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+_:TennisTournament1_N204_N202_N201_N203 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N204_N202_N201_N203 <http://www.semanticweb.org/CS586#t_tournament_year> "2010"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N204_N202_N201_N203 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N204_N202_N201_N203 <http://www.semanticweb.org/CS586#t_tournament_score> "6-3, 7-5, 6-4"^^<string> .
+_:TennisTournament1_N204_N202_N201_N203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+
+_:TennisTournament1_N209_N207_N206_N208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N209_N207_N206_N208 <http://www.semanticweb.org/CS586#t_tournament_winner> "Roger Federer"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N209_N207_N206_N208 <http://www.semanticweb.org/CS586#t_tournament_score> "5-7, 7-6(6), 7-6(5), 3-6, 16-14"^^<string> .
+_:TennisTournament1_N209_N207_N206_N208 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N209_N207_N206_N208 <http://www.semanticweb.org/CS586#t_tournament_year> "2009"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+_:TennisTournament1_N214_N212_N211_N213 <http://www.semanticweb.org/CS586#t_tournament_year> "2008"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N214_N212_N211_N213 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N214_N212_N211_N213 <http://www.semanticweb.org/CS586#t_tournament_winner> "Rafael Nadal"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N214_N212_N211_N213 <http://www.semanticweb.org/CS586#t_tournament_score> "6-4, 6-4, 6-7(5), 6-7(8), 9-7"^^<string> .
+_:TennisTournament1_N214_N212_N211_N213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+
+_:TennisTournament1_N219_N217_N216_N218 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N219_N217_N216_N218 <http://www.semanticweb.org/CS586#t_tournament_year> "2007"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N219_N217_N216_N218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N219_N217_N216_N218 <http://www.semanticweb.org/CS586#t_tournament_winner> "Roger Federer"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N219_N217_N216_N218 <http://www.semanticweb.org/CS586#t_tournament_score> "7-6(7), 4-6, 7-6(3), 2-6, 6-2"^^<string> .
+
+_:TennisTournament1_N224_N222_N221_N223 <http://www.semanticweb.org/CS586#t_tournament_score> "6-0, 7-6(5), 6-7(2), 6-3"^^<string> .
+_:TennisTournament1_N224_N222_N221_N223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N224_N222_N221_N223 <http://www.semanticweb.org/CS586#t_tournament_year> "2006"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N224_N222_N221_N223 <http://www.semanticweb.org/CS586#t_tournament_winner> "Roger Federer"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N224_N222_N221_N223 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+
+_:TennisTournament1_N229_N227_N226_N228 <http://www.semanticweb.org/CS586#t_tournament_winner> "Roger Federer"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N229_N227_N226_N228 <http://www.semanticweb.org/CS586#t_tournament_score> "6-2, 7-6(2), 6-4"^^<string> .
+_:TennisTournament1_N229_N227_N226_N228 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N229_N227_N226_N228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N229_N227_N226_N228 <http://www.semanticweb.org/CS586#t_tournament_year> "2005"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+_:TennisTournament1_N234_N232_N231_N233 <http://www.semanticweb.org/CS586#t_tournament_score> "4-6, 7-5, 7-6(3), 6-4"^^<string> .
+_:TennisTournament1_N234_N232_N231_N233 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N234_N232_N231_N233 <http://www.semanticweb.org/CS586#t_tournament_year> "2004"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N234_N232_N231_N233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N234_N232_N231_N233 <http://www.semanticweb.org/CS586#t_tournament_winner> "Roger Federer"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+_:TennisTournament1_N239_N237_N236_N238 <http://www.semanticweb.org/CS586#t_tournament_winner> "Roger Federer"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N239_N237_N236_N238 <http://www.semanticweb.org/CS586#t_tournament_score> "7-6(5), 6-2, 7-6(3)"^^<string> .
+_:TennisTournament1_N239_N237_N236_N238 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N239_N237_N236_N238 <http://www.semanticweb.org/CS586#t_tournament_year> "2003"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N239_N237_N236_N238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+
+_:TennisTournament1_N244_N242_N241_N243 <http://www.semanticweb.org/CS586#t_tournament_winner> "Lleyton Hewitt"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N244_N242_N241_N243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N244_N242_N241_N243 <http://www.semanticweb.org/CS586#t_tournament_year> "2002"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N244_N242_N241_N243 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N244_N242_N241_N243 <http://www.semanticweb.org/CS586#t_tournament_score> "6-1, 6-3, 6-2"^^<string> .
+
+_:TennisTournament1_N249_N247_N246_N248 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N249_N247_N246_N248 <http://www.semanticweb.org/CS586#t_tournament_winner> "Goran Ivanisevic"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N249_N247_N246_N248 <http://www.semanticweb.org/CS586#t_tournament_year> "2001"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:TennisTournament1_N249_N247_N246_N248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N249_N247_N246_N248 <http://www.semanticweb.org/CS586#t_tournament_score> "6-3, 3-6, 6-3, 2-6, 9-7"^^<string> .
+
+_:TennisTournament1_N254_N252_N251_N253 <http://www.semanticweb.org/CS586#t_tournament_winner> "Pete Sampras"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:TennisTournament1_N254_N252_N251_N253 <http://www.semanticweb.org/CS586#t_tournament_score> "6-7(10), 7-6(5), 6-4, 6-2"^^<string> .
+_:TennisTournament1_N254_N252_N251_N253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/CS586#TennisTournament> .
+_:TennisTournament1_N254_N252_N251_N253 <http://www.semanticweb.org/CS586#t_tournament_name> "Wimbledon"^^<string> .
+_:TennisTournament1_N254_N252_N251_N253 <http://www.semanticweb.org/CS586#t_tournament_year> "2000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+

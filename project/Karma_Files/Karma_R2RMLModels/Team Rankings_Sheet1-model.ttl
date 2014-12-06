@@ -1,0 +1,620 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1984bte1ix1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Team Rankings_Sheet1" ;
+	km-dev:modelPublicationTime "1417485924402"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Matches\"}],[{\"columnName\":\"Points\"}],[{\"columnName\":\"Rating\"}],[{\"columnName\":\"Type\"}],[{\"columnName\":\"Team\"}],[{\"columnName\":\"Rank\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Matches\"}],[{\"columnName\":\"Points\"}],[{\"columnName\":\"Rating\"}],[{\"columnName\":\"Type\"}],[{\"columnName\":\"Team\"}],[{\"columnName\":\"Rank\"}]]" ;
+	km-dev:hasModelLabel "Team Rankings_Sheet1" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Rank\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/RankValue\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Rank1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Rank1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Rank\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:integer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Rank\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Rank\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Team\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TeamName\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Team1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Team1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Team\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Team\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Team\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Matches\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TotalMatches\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Team/Team1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Team1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Team\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:integer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Matches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Matches\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Points\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TotalPoints\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Team/Team1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Team1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Team\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:integer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Points\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Points\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Rating\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TeamRating\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Team/Team1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Team1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Team\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:integer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Rating\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Rating\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Type\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TournamentType\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Tournaments1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Tournaments1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Tournaments\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_ef462c6c-7bc7-4cfe-9f96-dbc7cd234356 a rr:TriplesMap .
+
+_:node1984bte1ix1 km-dev:hasTriplesMap km-dev:TriplesMap_ef462c6c-7bc7-4cfe-9f96-dbc7cd234356 .
+
+km-dev:TriplesMap_ef462c6c-7bc7-4cfe-9f96-dbc7cd234356 km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix2 rr:tableName "Team Rankings_Sheet1" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasLogicalTable _:node1984bte1ix2 .
+
+km-dev:TriplesMap_ef462c6c-7bc7-4cfe-9f96-dbc7cd234356 rr:logicalTable _:node1984bte1ix2 ;
+	rr:subjectMap _:node1984bte1ix3 .
+
+_:node1984bte1ix1 km-dev:hasSubjectMap _:node1984bte1ix3 .
+
+_:node1984bte1ix3 km-dev:isPartOfMapping _:node1984bte1ix1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#Players1" ;
+	rr:class <http://www.semanticweb.org/CS586#Players> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Players1" .
+
+km-dev:PredicateObjectMap_e1614a29-193a-481f-bf68-dc5597abfc4f rr:predicate <http://www.semanticweb.org/CS586/HasRank> .
+
+km-dev:RefObjectMap_ae60db9e-113b-47c1-8b00-2f572a524251 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0e8c6358-0a2f-48f9-9a92-2a4fbea8f750 ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasObjectMap km-dev:RefObjectMap_ae60db9e-113b-47c1-8b00-2f572a524251 .
+
+km-dev:PredicateObjectMap_e1614a29-193a-481f-bf68-dc5597abfc4f rr:objectMap km-dev:RefObjectMap_ae60db9e-113b-47c1-8b00-2f572a524251 .
+
+km-dev:TriplesMap_ef462c6c-7bc7-4cfe-9f96-dbc7cd234356 rr:predicateObjectMap km-dev:PredicateObjectMap_e1614a29-193a-481f-bf68-dc5597abfc4f .
+
+km-dev:PredicateObjectMap_e1614a29-193a-481f-bf68-dc5597abfc4f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e1614a29-193a-481f-bf68-dc5597abfc4f .
+
+km-dev:PredicateObjectMap_90f1e2ce-330d-41f8-8ff2-26006b80af53 rr:predicate <http://www.semanticweb.org/CS586/ParticipatesIn> .
+
+km-dev:RefObjectMap_787e260c-bb73-4d8b-b853-91f8bb1a6a4a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_da8b9430-ae9d-4d8b-a9a8-97222bdede4a ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasObjectMap km-dev:RefObjectMap_787e260c-bb73-4d8b-b853-91f8bb1a6a4a .
+
+km-dev:PredicateObjectMap_90f1e2ce-330d-41f8-8ff2-26006b80af53 rr:objectMap km-dev:RefObjectMap_787e260c-bb73-4d8b-b853-91f8bb1a6a4a .
+
+km-dev:TriplesMap_ef462c6c-7bc7-4cfe-9f96-dbc7cd234356 rr:predicateObjectMap km-dev:PredicateObjectMap_90f1e2ce-330d-41f8-8ff2-26006b80af53 .
+
+km-dev:PredicateObjectMap_90f1e2ce-330d-41f8-8ff2-26006b80af53 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_90f1e2ce-330d-41f8-8ff2-26006b80af53 .
+
+km-dev:TriplesMap_0e8c6358-0a2f-48f9-9a92-2a4fbea8f750 a rr:TriplesMap .
+
+_:node1984bte1ix1 km-dev:hasTriplesMap km-dev:TriplesMap_0e8c6358-0a2f-48f9-9a92-2a4fbea8f750 .
+
+km-dev:TriplesMap_0e8c6358-0a2f-48f9-9a92-2a4fbea8f750 km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix4 rr:tableName "Team Rankings_Sheet1" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasLogicalTable _:node1984bte1ix4 .
+
+km-dev:TriplesMap_0e8c6358-0a2f-48f9-9a92-2a4fbea8f750 rr:logicalTable _:node1984bte1ix4 ;
+	rr:subjectMap _:node1984bte1ix5 .
+
+_:node1984bte1ix1 km-dev:hasSubjectMap _:node1984bte1ix5 .
+
+_:node1984bte1ix5 km-dev:isPartOfMapping _:node1984bte1ix1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#Rank1" ;
+	rr:class <http://www.semanticweb.org/CS586#Rank> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Rank1" .
+
+km-dev:PredicateObjectMap_02c487e5-b46f-4c12-b533-9f6b0e29aadf rr:predicate <http://www.semanticweb.org/CS586/RankValue> .
+
+_:node1984bte1ix6 rr:column "Rank" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasObjectMap _:node1984bte1ix6 .
+
+km-dev:PredicateObjectMap_02c487e5-b46f-4c12-b533-9f6b0e29aadf rr:objectMap _:node1984bte1ix6 .
+
+km-dev:TriplesMap_0e8c6358-0a2f-48f9-9a92-2a4fbea8f750 rr:predicateObjectMap km-dev:PredicateObjectMap_02c487e5-b46f-4c12-b533-9f6b0e29aadf .
+
+km-dev:PredicateObjectMap_02c487e5-b46f-4c12-b533-9f6b0e29aadf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_02c487e5-b46f-4c12-b533-9f6b0e29aadf .
+
+km-dev:TriplesMap_da8b9430-ae9d-4d8b-a9a8-97222bdede4a a rr:TriplesMap .
+
+_:node1984bte1ix1 km-dev:hasTriplesMap km-dev:TriplesMap_da8b9430-ae9d-4d8b-a9a8-97222bdede4a .
+
+km-dev:TriplesMap_da8b9430-ae9d-4d8b-a9a8-97222bdede4a km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix7 rr:tableName "Team Rankings_Sheet1" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasLogicalTable _:node1984bte1ix7 .
+
+km-dev:TriplesMap_da8b9430-ae9d-4d8b-a9a8-97222bdede4a rr:logicalTable _:node1984bte1ix7 ;
+	rr:subjectMap _:node1984bte1ix8 .
+
+_:node1984bte1ix1 km-dev:hasSubjectMap _:node1984bte1ix8 .
+
+_:node1984bte1ix8 km-dev:isPartOfMapping _:node1984bte1ix1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#Tournaments1" ;
+	rr:class <http://www.semanticweb.org/CS586#Tournaments> ;
+	rr:template "http://localhost:8080/source/{Type}" .
+
+km-dev:PredicateObjectMap_4db659f4-cf2f-49fb-84fb-10fe29aede6e rr:predicate <http://www.semanticweb.org/CS586/TournamentType> .
+
+_:node1984bte1ix9 rr:column "Type" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasObjectMap _:node1984bte1ix9 .
+
+km-dev:PredicateObjectMap_4db659f4-cf2f-49fb-84fb-10fe29aede6e rr:objectMap _:node1984bte1ix9 .
+
+km-dev:TriplesMap_da8b9430-ae9d-4d8b-a9a8-97222bdede4a rr:predicateObjectMap km-dev:PredicateObjectMap_4db659f4-cf2f-49fb-84fb-10fe29aede6e .
+
+km-dev:PredicateObjectMap_4db659f4-cf2f-49fb-84fb-10fe29aede6e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4db659f4-cf2f-49fb-84fb-10fe29aede6e .
+
+km-dev:TriplesMap_1bd241bc-5e4d-42e7-967c-649caf6985f9 a rr:TriplesMap .
+
+_:node1984bte1ix1 km-dev:hasTriplesMap km-dev:TriplesMap_1bd241bc-5e4d-42e7-967c-649caf6985f9 .
+
+km-dev:TriplesMap_1bd241bc-5e4d-42e7-967c-649caf6985f9 km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix10 rr:tableName "Team Rankings_Sheet1" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasLogicalTable _:node1984bte1ix10 .
+
+km-dev:TriplesMap_1bd241bc-5e4d-42e7-967c-649caf6985f9 rr:logicalTable _:node1984bte1ix10 ;
+	rr:subjectMap _:node1984bte1ix11 .
+
+_:node1984bte1ix1 km-dev:hasSubjectMap _:node1984bte1ix11 .
+
+_:node1984bte1ix11 km-dev:isPartOfMapping _:node1984bte1ix1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#Team1" ;
+	rr:class <http://www.semanticweb.org/CS586#Team> ;
+	rr:template "http://localhost:8080/source/{Team}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_b128b19f-a2b4-41b2-8bb8-2a62d080b0c5 rr:predicate <http://www.semanticweb.org/CS586/HasRank> .
+
+km-dev:RefObjectMap_c5c4450a-a625-4f75-9caf-753f8b222657 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0e8c6358-0a2f-48f9-9a92-2a4fbea8f750 ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasObjectMap km-dev:RefObjectMap_c5c4450a-a625-4f75-9caf-753f8b222657 .
+
+km-dev:PredicateObjectMap_b128b19f-a2b4-41b2-8bb8-2a62d080b0c5 rr:objectMap km-dev:RefObjectMap_c5c4450a-a625-4f75-9caf-753f8b222657 .
+
+km-dev:TriplesMap_1bd241bc-5e4d-42e7-967c-649caf6985f9 rr:predicateObjectMap km-dev:PredicateObjectMap_b128b19f-a2b4-41b2-8bb8-2a62d080b0c5 .
+
+km-dev:PredicateObjectMap_b128b19f-a2b4-41b2-8bb8-2a62d080b0c5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b128b19f-a2b4-41b2-8bb8-2a62d080b0c5 .
+
+km-dev:PredicateObjectMap_a8e913d5-be74-4d62-a00e-bb675f414adc rr:predicate <http://www.semanticweb.org/CS586/TeamName> .
+
+_:node1984bte1ix12 rr:column "Team" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasObjectMap _:node1984bte1ix12 .
+
+km-dev:PredicateObjectMap_a8e913d5-be74-4d62-a00e-bb675f414adc rr:objectMap _:node1984bte1ix12 .
+
+km-dev:TriplesMap_1bd241bc-5e4d-42e7-967c-649caf6985f9 rr:predicateObjectMap km-dev:PredicateObjectMap_a8e913d5-be74-4d62-a00e-bb675f414adc .
+
+km-dev:PredicateObjectMap_a8e913d5-be74-4d62-a00e-bb675f414adc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a8e913d5-be74-4d62-a00e-bb675f414adc .
+
+km-dev:PredicateObjectMap_af93448e-c052-45e2-9775-339311cc649e rr:predicate <http://www.semanticweb.org/CS586/TeamRating> .
+
+_:node1984bte1ix13 rr:column "Rating" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasObjectMap _:node1984bte1ix13 .
+
+km-dev:PredicateObjectMap_af93448e-c052-45e2-9775-339311cc649e rr:objectMap _:node1984bte1ix13 .
+
+km-dev:TriplesMap_1bd241bc-5e4d-42e7-967c-649caf6985f9 rr:predicateObjectMap km-dev:PredicateObjectMap_af93448e-c052-45e2-9775-339311cc649e .
+
+km-dev:PredicateObjectMap_af93448e-c052-45e2-9775-339311cc649e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_af93448e-c052-45e2-9775-339311cc649e .
+
+km-dev:PredicateObjectMap_23b86d99-05dc-4add-8261-b07b1a4a3191 rr:predicate <http://www.semanticweb.org/CS586/TotalMatches> .
+
+_:node1984bte1ix14 rr:column "Matches" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasObjectMap _:node1984bte1ix14 .
+
+km-dev:PredicateObjectMap_23b86d99-05dc-4add-8261-b07b1a4a3191 rr:objectMap _:node1984bte1ix14 .
+
+km-dev:TriplesMap_1bd241bc-5e4d-42e7-967c-649caf6985f9 rr:predicateObjectMap km-dev:PredicateObjectMap_23b86d99-05dc-4add-8261-b07b1a4a3191 .
+
+km-dev:PredicateObjectMap_23b86d99-05dc-4add-8261-b07b1a4a3191 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_23b86d99-05dc-4add-8261-b07b1a4a3191 .
+
+km-dev:PredicateObjectMap_cd31ac9a-4c4e-4796-86c8-197239833b24 rr:predicate <http://www.semanticweb.org/CS586/TotalPoints> .
+
+_:node1984bte1ix15 rr:column "Points" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasObjectMap _:node1984bte1ix15 .
+
+km-dev:PredicateObjectMap_cd31ac9a-4c4e-4796-86c8-197239833b24 rr:objectMap _:node1984bte1ix15 .
+
+km-dev:TriplesMap_1bd241bc-5e4d-42e7-967c-649caf6985f9 rr:predicateObjectMap km-dev:PredicateObjectMap_cd31ac9a-4c4e-4796-86c8-197239833b24 .
+
+km-dev:PredicateObjectMap_cd31ac9a-4c4e-4796-86c8-197239833b24 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1984bte1ix1 .
+
+_:node1984bte1ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cd31ac9a-4c4e-4796-86c8-197239833b24 .

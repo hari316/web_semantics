@@ -1,0 +1,97 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cs586: <http://www.semanticweb.org/CS586/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX local: <http://localhost:8080/source/>
+
+SELECT ?p ?Pname ?rank ?r
+WHERE
+{
+?p cs586:HasRank  ?rank;
+ cs586:PlayerName ?Pname.
+
+?rank cs586:RankValue "1"^^xsd:integer.
+
+}
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cs586: <http://www.semanticweb.org/CS586/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX local: <http://localhost:8080/source/>
+
+SELECT ?p ?Pname ?rank ?DOB ?age
+WHERE
+{
+
+{
+?p cs586:HasRank  ?rank;
+   cs586:PlayerName ?Pname;
+   cs586:BornOn ?date;
+   cs586:Age ?age.
+?date cs586:DateValue ?DOB.
+?rank cs586:RankValue "1"^^xsd:integer.
+}
+
+
+UNION
+
+{
+?p cs586:HasRank  ?rank;
+   cs586:PlayerName ?Pname;
+   cs586:Age ?age.
+?rank cs586:RankValue "1"^^xsd:integer.
+
+}
+
+}
+
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cs586: <http://www.semanticweb.org/CS586/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX local: <http://localhost:8080/source/>
+
+SELECT (COUNT(?age) AS ?AgeValue)
+WHERE
+{
+?p cs586:HasRank  ?rank;
+   cs586:PlayerName ?Pname;
+   cs586:BornOn ?date;
+   cs586:Age ?age.
+FILTER(?age > 30)
+}
+
+
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cs586: <http://www.semanticweb.org/CS586/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX local: <http://localhost:8080/source/>
+
+SELECT DISTINCT ?p ?Pname ?datevalue ?type
+WHERE
+{
+?p cs586:HasRank  ?rank;
+ cs586:PlayerName ?Pname.
+OPTIONAL{
+ ?p cs586:BornOn ?date.
+ ?date cs586:DateValue ?datevalue.
+ OPTIONAL{
+?p cs586:ParticipatesIn ?tourn.
+?tourn cs586:TournamentType ?type.
+}
+}.
+?rank cs586:RankValue "2"^^xsd:integer.
+
+}
+
+

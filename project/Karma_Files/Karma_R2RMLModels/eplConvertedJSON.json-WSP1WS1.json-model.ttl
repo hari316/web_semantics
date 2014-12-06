@@ -1,0 +1,967 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cs586: <http://www.semanticweb.org/CS586/sports#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix schema: <http://schema.org/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1981tn2s0x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "eplConvertedJSON.json-WSP1WS1.json" ;
+	km-dev:modelPublicationTime "1417403927424"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"SerNo\"}],[{\"columnName\":\"PreviousClub\"}],[{\"columnName\":\"Nationality\"}],[{\"columnName\":\"DateOfBirth\"}],[{\"columnName\":\"PlayerName\"}],[{\"columnName\":\"BirthPlace\"}],[{\"columnName\":\"Position\"}],[{\"columnName\":\"Height\"}],[{\"columnName\":\"TeamName\"}],[{\"columnName\":\"League\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"SerNo\"}],[{\"columnName\":\"PreviousClub\"}],[{\"columnName\":\"Nationality\"}],[{\"columnName\":\"DateOfBirth\"}],[{\"columnName\":\"PlayerName\"}],[{\"columnName\":\"BirthPlace\"}],[{\"columnName\":\"Position\"}],[{\"columnName\":\"Height\"}],[{\"columnName\":\"TeamName\"}],[{\"columnName\":\"League\"}]]" ;
+	km-dev:hasModelLabel "eplConvertedJSON.json-WSP1WS1.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"TeamName\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_team_teamname\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballTeam/FootballTeam1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballTeam1 (add)\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballTeam\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"TeamName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"TeamName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"SerNo\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_player_sno\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballPlayer1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballPlayer1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"SerNo\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"SerNo\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Position\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_player_position\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballPlayer/FootballPlayer1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballPlayer1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Position\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Position\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PlayerName\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_player_name\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballPlayer/FootballPlayer1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballPlayer1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PlayerName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PlayerName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Nationality\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_player_nationality\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballPlayer/FootballPlayer1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballPlayer1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Nationality\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Nationality\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PreviousClub\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_team_teamname\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballTeam/FootballTeam2 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballTeam2 (add)\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballTeam\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PreviousClub\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PreviousClub\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DateOfBirth\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_player_dob\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballPlayer/FootballPlayer1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballPlayer1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DateOfBirth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DateOfBirth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"BirthPlace\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_player_birthplace\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballPlayer/FootballPlayer1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballPlayer1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BirthPlace\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BirthPlace\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Height\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"Height\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return str(float(str(getValue(\\\"Height\\\").encode('utf-8')))*100)\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"0.0\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Height\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Height\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Height\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_player_height\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballPlayer/FootballPlayer1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballPlayer1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:float\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Height\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Height\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"League\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586#f_player_league\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#FootballPlayer/FootballPlayer1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#FootballPlayer1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#FootballPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"League\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"League\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 a rr:TriplesMap .
+
+_:node1981tn2s0x1 km-dev:hasTriplesMap km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x2 rr:tableName "eplConvertedJSON.json-WSP1WS1.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasLogicalTable _:node1981tn2s0x2 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:logicalTable _:node1981tn2s0x2 ;
+	rr:subjectMap _:node1981tn2s0x3 .
+
+_:node1981tn2s0x1 km-dev:hasSubjectMap _:node1981tn2s0x3 .
+
+_:node1981tn2s0x3 km-dev:isPartOfMapping _:node1981tn2s0x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#FootballPlayer1" ;
+	rr:class <http://www.semanticweb.org/CS586#FootballPlayer> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "FootballPlayer1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_89c0c414-b72b-48e6-9874-afbb0b7cf85f rr:predicate <http://www.semanticweb.org/CS586#f_player_birthplace> .
+
+_:node1981tn2s0x4 rr:column "BirthPlace" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x4 .
+
+km-dev:PredicateObjectMap_89c0c414-b72b-48e6-9874-afbb0b7cf85f rr:objectMap _:node1981tn2s0x4 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:predicateObjectMap km-dev:PredicateObjectMap_89c0c414-b72b-48e6-9874-afbb0b7cf85f .
+
+km-dev:PredicateObjectMap_89c0c414-b72b-48e6-9874-afbb0b7cf85f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_89c0c414-b72b-48e6-9874-afbb0b7cf85f .
+
+km-dev:PredicateObjectMap_c8d37c83-9111-42b9-bfc2-3234e865a781 rr:predicate <http://www.semanticweb.org/CS586#f_player_dob> .
+
+_:node1981tn2s0x5 rr:column "DateOfBirth" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x5 .
+
+km-dev:PredicateObjectMap_c8d37c83-9111-42b9-bfc2-3234e865a781 rr:objectMap _:node1981tn2s0x5 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:predicateObjectMap km-dev:PredicateObjectMap_c8d37c83-9111-42b9-bfc2-3234e865a781 .
+
+km-dev:PredicateObjectMap_c8d37c83-9111-42b9-bfc2-3234e865a781 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c8d37c83-9111-42b9-bfc2-3234e865a781 .
+
+km-dev:PredicateObjectMap_ea357393-61d3-4817-a4f4-9a58618075fb rr:predicate <http://www.semanticweb.org/CS586#f_player_height> .
+
+_:node1981tn2s0x6 rr:column "Height" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x6 .
+
+km-dev:PredicateObjectMap_ea357393-61d3-4817-a4f4-9a58618075fb rr:objectMap _:node1981tn2s0x6 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:predicateObjectMap km-dev:PredicateObjectMap_ea357393-61d3-4817-a4f4-9a58618075fb .
+
+km-dev:PredicateObjectMap_ea357393-61d3-4817-a4f4-9a58618075fb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ea357393-61d3-4817-a4f4-9a58618075fb .
+
+km-dev:PredicateObjectMap_19f1bec5-d23d-43a4-a072-5bd3c5ab5a06 rr:predicate <http://www.semanticweb.org/CS586#f_player_league> .
+
+_:node1981tn2s0x7 rr:column "League" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x7 .
+
+km-dev:PredicateObjectMap_19f1bec5-d23d-43a4-a072-5bd3c5ab5a06 rr:objectMap _:node1981tn2s0x7 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:predicateObjectMap km-dev:PredicateObjectMap_19f1bec5-d23d-43a4-a072-5bd3c5ab5a06 .
+
+km-dev:PredicateObjectMap_19f1bec5-d23d-43a4-a072-5bd3c5ab5a06 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_19f1bec5-d23d-43a4-a072-5bd3c5ab5a06 .
+
+km-dev:PredicateObjectMap_f7b9fad9-22d2-4e64-90f9-b1d9977f7ae7 rr:predicate <http://www.semanticweb.org/CS586#f_player_name> .
+
+_:node1981tn2s0x8 rr:column "PlayerName" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x8 .
+
+km-dev:PredicateObjectMap_f7b9fad9-22d2-4e64-90f9-b1d9977f7ae7 rr:objectMap _:node1981tn2s0x8 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:predicateObjectMap km-dev:PredicateObjectMap_f7b9fad9-22d2-4e64-90f9-b1d9977f7ae7 .
+
+km-dev:PredicateObjectMap_f7b9fad9-22d2-4e64-90f9-b1d9977f7ae7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f7b9fad9-22d2-4e64-90f9-b1d9977f7ae7 .
+
+km-dev:PredicateObjectMap_7a9ee0ed-dd0c-4dad-816c-761e63e87883 rr:predicate <http://www.semanticweb.org/CS586#f_player_nationality> .
+
+_:node1981tn2s0x9 rr:column "Nationality" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x9 .
+
+km-dev:PredicateObjectMap_7a9ee0ed-dd0c-4dad-816c-761e63e87883 rr:objectMap _:node1981tn2s0x9 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:predicateObjectMap km-dev:PredicateObjectMap_7a9ee0ed-dd0c-4dad-816c-761e63e87883 .
+
+km-dev:PredicateObjectMap_7a9ee0ed-dd0c-4dad-816c-761e63e87883 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7a9ee0ed-dd0c-4dad-816c-761e63e87883 .
+
+km-dev:PredicateObjectMap_1582118c-58b1-4f94-8131-3052dab83869 rr:predicate <http://www.semanticweb.org/CS586#f_player_position> .
+
+_:node1981tn2s0x10 rr:column "Position" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x10 .
+
+km-dev:PredicateObjectMap_1582118c-58b1-4f94-8131-3052dab83869 rr:objectMap _:node1981tn2s0x10 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:predicateObjectMap km-dev:PredicateObjectMap_1582118c-58b1-4f94-8131-3052dab83869 .
+
+km-dev:PredicateObjectMap_1582118c-58b1-4f94-8131-3052dab83869 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1582118c-58b1-4f94-8131-3052dab83869 .
+
+km-dev:PredicateObjectMap_fec6fd8b-c6ad-417c-9e44-770f04515ac0 rr:predicate <http://www.semanticweb.org/CS586#f_player_sno> .
+
+_:node1981tn2s0x11 rr:column "SerNo" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x11 .
+
+km-dev:PredicateObjectMap_fec6fd8b-c6ad-417c-9e44-770f04515ac0 rr:objectMap _:node1981tn2s0x11 .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:predicateObjectMap km-dev:PredicateObjectMap_fec6fd8b-c6ad-417c-9e44-770f04515ac0 .
+
+km-dev:PredicateObjectMap_fec6fd8b-c6ad-417c-9e44-770f04515ac0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fec6fd8b-c6ad-417c-9e44-770f04515ac0 .
+
+km-dev:PredicateObjectMap_3fc2f296-a2c5-47c9-a578-969bed19c8da rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_213328b2-cd67-4778-acac-8a1122a6ce8d a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4aea785e-da1f-42d9-bf1b-8ef92f6ccc33 ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap km-dev:RefObjectMap_213328b2-cd67-4778-acac-8a1122a6ce8d .
+
+km-dev:PredicateObjectMap_3fc2f296-a2c5-47c9-a578-969bed19c8da rr:objectMap km-dev:RefObjectMap_213328b2-cd67-4778-acac-8a1122a6ce8d .
+
+km-dev:TriplesMap_fe9d3133-0f13-44a6-9f15-ce1714594a04 rr:predicateObjectMap km-dev:PredicateObjectMap_3fc2f296-a2c5-47c9-a578-969bed19c8da .
+
+km-dev:PredicateObjectMap_3fc2f296-a2c5-47c9-a578-969bed19c8da a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3fc2f296-a2c5-47c9-a578-969bed19c8da .
+
+km-dev:TriplesMap_4aea785e-da1f-42d9-bf1b-8ef92f6ccc33 a rr:TriplesMap .
+
+_:node1981tn2s0x1 km-dev:hasTriplesMap km-dev:TriplesMap_4aea785e-da1f-42d9-bf1b-8ef92f6ccc33 .
+
+km-dev:TriplesMap_4aea785e-da1f-42d9-bf1b-8ef92f6ccc33 km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x12 rr:tableName "eplConvertedJSON.json-WSP1WS1.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasLogicalTable _:node1981tn2s0x12 .
+
+km-dev:TriplesMap_4aea785e-da1f-42d9-bf1b-8ef92f6ccc33 rr:logicalTable _:node1981tn2s0x12 ;
+	rr:subjectMap _:node1981tn2s0x13 .
+
+_:node1981tn2s0x1 km-dev:hasSubjectMap _:node1981tn2s0x13 .
+
+_:node1981tn2s0x13 km-dev:isPartOfMapping _:node1981tn2s0x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/noopur/ontologies/2014/10/sports#Football1" ;
+	rr:class <http://www.semanticweb.org/noopur/ontologies/2014/10/sports#Football> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Football1" .
+
+km-dev:TriplesMap_15cf1f28-40a0-4594-836a-0db61f20a901 a rr:TriplesMap .
+
+_:node1981tn2s0x1 km-dev:hasTriplesMap km-dev:TriplesMap_15cf1f28-40a0-4594-836a-0db61f20a901 .
+
+km-dev:TriplesMap_15cf1f28-40a0-4594-836a-0db61f20a901 km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x14 rr:tableName "eplConvertedJSON.json-WSP1WS1.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasLogicalTable _:node1981tn2s0x14 .
+
+km-dev:TriplesMap_15cf1f28-40a0-4594-836a-0db61f20a901 rr:logicalTable _:node1981tn2s0x14 ;
+	rr:subjectMap _:node1981tn2s0x15 .
+
+_:node1981tn2s0x1 km-dev:hasSubjectMap _:node1981tn2s0x15 .
+
+_:node1981tn2s0x15 km-dev:isPartOfMapping _:node1981tn2s0x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#FootballTeam1" ;
+	rr:class <http://www.semanticweb.org/CS586#FootballTeam> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "FootballTeam1" .
+
+km-dev:PredicateObjectMap_b5b90113-1032-492e-a774-40907cf5bfa9 rr:predicate <http://www.semanticweb.org/CS586#f_team_teamname> .
+
+_:node1981tn2s0x16 rr:column "TeamName" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x16 .
+
+km-dev:PredicateObjectMap_b5b90113-1032-492e-a774-40907cf5bfa9 rr:objectMap _:node1981tn2s0x16 .
+
+km-dev:TriplesMap_15cf1f28-40a0-4594-836a-0db61f20a901 rr:predicateObjectMap km-dev:PredicateObjectMap_b5b90113-1032-492e-a774-40907cf5bfa9 .
+
+km-dev:PredicateObjectMap_b5b90113-1032-492e-a774-40907cf5bfa9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b5b90113-1032-492e-a774-40907cf5bfa9 .
+
+km-dev:PredicateObjectMap_72f3a4e7-02ee-4e59-b539-0acc942eb44c rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_5301fd00-a0ae-4404-87b6-7a26297b151b a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4aea785e-da1f-42d9-bf1b-8ef92f6ccc33 ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap km-dev:RefObjectMap_5301fd00-a0ae-4404-87b6-7a26297b151b .
+
+km-dev:PredicateObjectMap_72f3a4e7-02ee-4e59-b539-0acc942eb44c rr:objectMap km-dev:RefObjectMap_5301fd00-a0ae-4404-87b6-7a26297b151b .
+
+km-dev:TriplesMap_15cf1f28-40a0-4594-836a-0db61f20a901 rr:predicateObjectMap km-dev:PredicateObjectMap_72f3a4e7-02ee-4e59-b539-0acc942eb44c .
+
+km-dev:PredicateObjectMap_72f3a4e7-02ee-4e59-b539-0acc942eb44c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_72f3a4e7-02ee-4e59-b539-0acc942eb44c .
+
+km-dev:TriplesMap_fc3620ae-542a-482a-8e65-b91ee5557831 a rr:TriplesMap .
+
+_:node1981tn2s0x1 km-dev:hasTriplesMap km-dev:TriplesMap_fc3620ae-542a-482a-8e65-b91ee5557831 .
+
+km-dev:TriplesMap_fc3620ae-542a-482a-8e65-b91ee5557831 km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x17 rr:tableName "eplConvertedJSON.json-WSP1WS1.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasLogicalTable _:node1981tn2s0x17 .
+
+km-dev:TriplesMap_fc3620ae-542a-482a-8e65-b91ee5557831 rr:logicalTable _:node1981tn2s0x17 ;
+	rr:subjectMap _:node1981tn2s0x18 .
+
+_:node1981tn2s0x1 km-dev:hasSubjectMap _:node1981tn2s0x18 .
+
+_:node1981tn2s0x18 km-dev:isPartOfMapping _:node1981tn2s0x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#FootballTeam2" ;
+	rr:class <http://www.semanticweb.org/CS586#FootballTeam> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "FootballTeam2" .
+
+km-dev:PredicateObjectMap_99ee788b-f10b-4e5c-b267-e48c01adbd0e rr:predicate <http://www.semanticweb.org/CS586#f_team_teamname> .
+
+_:node1981tn2s0x19 rr:column "PreviousClub" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap _:node1981tn2s0x19 .
+
+km-dev:PredicateObjectMap_99ee788b-f10b-4e5c-b267-e48c01adbd0e rr:objectMap _:node1981tn2s0x19 .
+
+km-dev:TriplesMap_fc3620ae-542a-482a-8e65-b91ee5557831 rr:predicateObjectMap km-dev:PredicateObjectMap_99ee788b-f10b-4e5c-b267-e48c01adbd0e .
+
+km-dev:PredicateObjectMap_99ee788b-f10b-4e5c-b267-e48c01adbd0e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_99ee788b-f10b-4e5c-b267-e48c01adbd0e .
+
+km-dev:PredicateObjectMap_d61de7da-d13d-421f-abb4-b19252f87bd4 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_3ee5b8de-bd94-43af-8108-c8523d19bdb0 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4aea785e-da1f-42d9-bf1b-8ef92f6ccc33 ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasObjectMap km-dev:RefObjectMap_3ee5b8de-bd94-43af-8108-c8523d19bdb0 .
+
+km-dev:PredicateObjectMap_d61de7da-d13d-421f-abb4-b19252f87bd4 rr:objectMap km-dev:RefObjectMap_3ee5b8de-bd94-43af-8108-c8523d19bdb0 .
+
+km-dev:TriplesMap_fc3620ae-542a-482a-8e65-b91ee5557831 rr:predicateObjectMap km-dev:PredicateObjectMap_d61de7da-d13d-421f-abb4-b19252f87bd4 .
+
+km-dev:PredicateObjectMap_d61de7da-d13d-421f-abb4-b19252f87bd4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1981tn2s0x1 .
+
+_:node1981tn2s0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d61de7da-d13d-421f-abb4-b19252f87bd4 .

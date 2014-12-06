@@ -1,0 +1,19 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cs586: <http://www.semanticweb.org/CS586/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX local: <http://localhost:8080/source/>
+
+SELECT DISTINCT ?Pname ?name ?dateval
+WHERE
+{
+?c cs586:TeamName ?name;
+   cs586:HasRank ?rank.
+?rank cs586:RankValue "2"^^xsd:integer.
+?p cs586:PlayerName ?Pname;
+   cs586:MemberOf ?team;
+   cs586:BornOn ?date.
+?team cs586:TeamName ?name.
+?date cs586:DateValue ?dateval.
+
+}

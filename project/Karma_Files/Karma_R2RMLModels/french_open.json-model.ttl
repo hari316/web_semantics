@@ -1,0 +1,388 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node198401k42x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "french_open.json" ;
+	km-dev:modelPublicationTime "1417473478786"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"tournament\"}],[{\"columnName\":\"score\"}],[{\"columnName\":\"winner\"}],[{\"columnName\":\"year\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"tournament\"}],[{\"columnName\":\"score\"}],[{\"columnName\":\"winner\"}],[{\"columnName\":\"year\"}]]" ;
+	km-dev:hasModelLabel "french_open.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"year\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TournamentYear\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Tournaments1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Tournaments1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Tournaments\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"year\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"score\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TournamentScore\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Tournaments1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Tournaments1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Tournaments\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"score\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"score\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"tournament\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TournamentName\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#Tournaments/Tournaments1\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#Tournaments1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#Tournaments\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"tournament\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"tournament\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"winner\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/CS586/TournamentWinner\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/CS586#TennisPlayer/TennisPlayer1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/CS586#TennisPlayer1 (add)\",
+                    \"DomainUri\": \"http://www.semanticweb.org/CS586#TennisPlayer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"winner\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"winner\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_f1f86a47-04fe-4c8f-b0e6-ba085a64e0ea a rr:TriplesMap .
+
+_:node198401k42x1 km-dev:hasTriplesMap km-dev:TriplesMap_f1f86a47-04fe-4c8f-b0e6-ba085a64e0ea .
+
+km-dev:TriplesMap_f1f86a47-04fe-4c8f-b0e6-ba085a64e0ea km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x2 rr:tableName "french_open.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasLogicalTable _:node198401k42x2 .
+
+km-dev:TriplesMap_f1f86a47-04fe-4c8f-b0e6-ba085a64e0ea rr:logicalTable _:node198401k42x2 ;
+	rr:subjectMap _:node198401k42x3 .
+
+_:node198401k42x1 km-dev:hasSubjectMap _:node198401k42x3 .
+
+_:node198401k42x3 km-dev:isPartOfMapping _:node198401k42x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#TennisPlayer1" ;
+	rr:class <http://www.semanticweb.org/CS586#TennisPlayer> ;
+	rr:template "http://localhost:8080/source/{winner}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_57d2661d-6409-4d56-94fb-3de68b68021c rr:predicate <http://www.semanticweb.org/CS586/TournamentWinner> .
+
+_:node198401k42x4 rr:column "winner" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasObjectMap _:node198401k42x4 .
+
+km-dev:PredicateObjectMap_57d2661d-6409-4d56-94fb-3de68b68021c rr:objectMap _:node198401k42x4 .
+
+km-dev:TriplesMap_f1f86a47-04fe-4c8f-b0e6-ba085a64e0ea rr:predicateObjectMap km-dev:PredicateObjectMap_57d2661d-6409-4d56-94fb-3de68b68021c .
+
+km-dev:PredicateObjectMap_57d2661d-6409-4d56-94fb-3de68b68021c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_57d2661d-6409-4d56-94fb-3de68b68021c .
+
+km-dev:PredicateObjectMap_2cc5fab5-05cc-46b4-bc4f-56d5cfaac32f rr:predicate <http://www.semanticweb.org/CS586/ParticipatesIn> .
+
+km-dev:RefObjectMap_7356eda9-c3d4-4c05-88a8-6c0bc7e2cfce a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_f51a6435-076b-440a-a180-d73598308512 ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasObjectMap km-dev:RefObjectMap_7356eda9-c3d4-4c05-88a8-6c0bc7e2cfce .
+
+km-dev:PredicateObjectMap_2cc5fab5-05cc-46b4-bc4f-56d5cfaac32f rr:objectMap km-dev:RefObjectMap_7356eda9-c3d4-4c05-88a8-6c0bc7e2cfce .
+
+km-dev:TriplesMap_f1f86a47-04fe-4c8f-b0e6-ba085a64e0ea rr:predicateObjectMap km-dev:PredicateObjectMap_2cc5fab5-05cc-46b4-bc4f-56d5cfaac32f .
+
+km-dev:PredicateObjectMap_2cc5fab5-05cc-46b4-bc4f-56d5cfaac32f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2cc5fab5-05cc-46b4-bc4f-56d5cfaac32f .
+
+km-dev:TriplesMap_f51a6435-076b-440a-a180-d73598308512 a rr:TriplesMap .
+
+_:node198401k42x1 km-dev:hasTriplesMap km-dev:TriplesMap_f51a6435-076b-440a-a180-d73598308512 .
+
+km-dev:TriplesMap_f51a6435-076b-440a-a180-d73598308512 km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x5 rr:tableName "french_open.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasLogicalTable _:node198401k42x5 .
+
+km-dev:TriplesMap_f51a6435-076b-440a-a180-d73598308512 rr:logicalTable _:node198401k42x5 ;
+	rr:subjectMap _:node198401k42x6 .
+
+_:node198401k42x1 km-dev:hasSubjectMap _:node198401k42x6 .
+
+_:node198401k42x6 km-dev:isPartOfMapping _:node198401k42x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/CS586#Tournaments1" ;
+	rr:class <http://www.semanticweb.org/CS586#Tournaments> ;
+	rr:template "http://localhost:8080/source/{year}" .
+
+km-dev:PredicateObjectMap_1ded975c-fdae-4eee-9a37-f7fd2e1fb9cd rr:predicate <http://www.semanticweb.org/CS586/TournamentName> .
+
+_:node198401k42x7 rr:column "tournament" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasObjectMap _:node198401k42x7 .
+
+km-dev:PredicateObjectMap_1ded975c-fdae-4eee-9a37-f7fd2e1fb9cd rr:objectMap _:node198401k42x7 .
+
+km-dev:TriplesMap_f51a6435-076b-440a-a180-d73598308512 rr:predicateObjectMap km-dev:PredicateObjectMap_1ded975c-fdae-4eee-9a37-f7fd2e1fb9cd .
+
+km-dev:PredicateObjectMap_1ded975c-fdae-4eee-9a37-f7fd2e1fb9cd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1ded975c-fdae-4eee-9a37-f7fd2e1fb9cd .
+
+km-dev:PredicateObjectMap_a528f70f-2342-439e-ace5-cae2f46b553c rr:predicate <http://www.semanticweb.org/CS586/TournamentScore> .
+
+_:node198401k42x8 rr:column "score" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasObjectMap _:node198401k42x8 .
+
+km-dev:PredicateObjectMap_a528f70f-2342-439e-ace5-cae2f46b553c rr:objectMap _:node198401k42x8 .
+
+km-dev:TriplesMap_f51a6435-076b-440a-a180-d73598308512 rr:predicateObjectMap km-dev:PredicateObjectMap_a528f70f-2342-439e-ace5-cae2f46b553c .
+
+km-dev:PredicateObjectMap_a528f70f-2342-439e-ace5-cae2f46b553c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a528f70f-2342-439e-ace5-cae2f46b553c .
+
+km-dev:PredicateObjectMap_4392fb1c-0470-49d5-a9c5-8583d1bb7fe8 rr:predicate <http://www.semanticweb.org/CS586/TournamentYear> .
+
+_:node198401k42x9 rr:column "year" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasObjectMap _:node198401k42x9 .
+
+km-dev:PredicateObjectMap_4392fb1c-0470-49d5-a9c5-8583d1bb7fe8 rr:objectMap _:node198401k42x9 .
+
+km-dev:TriplesMap_f51a6435-076b-440a-a180-d73598308512 rr:predicateObjectMap km-dev:PredicateObjectMap_4392fb1c-0470-49d5-a9c5-8583d1bb7fe8 .
+
+km-dev:PredicateObjectMap_4392fb1c-0470-49d5-a9c5-8583d1bb7fe8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node198401k42x1 .
+
+_:node198401k42x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4392fb1c-0470-49d5-a9c5-8583d1bb7fe8 .
